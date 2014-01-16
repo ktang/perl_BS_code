@@ -1,0 +1,4 @@
+chr	start	end	ah
+chr1	1	50	a
+chr1	55	100	h
+chr1	327010	327023	c

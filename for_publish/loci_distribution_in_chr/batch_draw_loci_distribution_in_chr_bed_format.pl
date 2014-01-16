@@ -1,0 +1,1 @@
+/Users/tang58/scripts_all/R_scripts/draw_loci_distribution_in_5_chr/batch_draw_loci_distribution_in_chr_bed_format.pl

@@ -1,0 +1,61 @@
+x = c(486, 41, 365, 3654, 2198, 85, 41, 173, 3855, 327, 42, 80, 81, 3399, 90 );
+
+library(VennDiagram)
+venn.plot <- draw.quad.venn(
+	area1 = sum( x[ c(4,5,6,12,15,11,10,9) ] ) , 
+	area2 = sum( x[ c(6:8,11:15) ] ) , 
+	area3 = sum( x[ c(1:2, 4:7, 12:13) ] ) ,
+	area4 = sum( x[ c(2,3,5:8, 10,11) ] ) ,
+	
+	n12 = sum( x[ c(6,11,12,15) ] ) ,
+	n13 = sum( x[ c(4:6,12) ] ) ,
+	n14 = sum( x[ c(5,6,10,11) ] ) ,
+	n23 = sum( x[ c(6,7,12,13) ] ) ,
+	n24 = sum( x[ c(6:8,11) ] ) ,
+	n34 = sum( x[ c(2, 5:7) ] ) ,
+
+	n123 = sum( x[ c(6, 12) ] ) ,
+	n124 = sum( x[ c(6, 11) ] ) ,
+	n134 = sum( x[ c(6, 5) ] ) ,
+	n234 = sum( x[ c(6, 7) ] ) ,
+	n1234 = x[6],
+	#category = c("First", "Second", "Third", "Fourth"),
+	category = c("ibm1", "rdd", "edm2", "ibm2"),
+
+#	fill = c("orange", "red", "green", "blue"),
+	fill = c( rgb (177,199,112  ,maxColorValue = 255 ), # ibm1 green for ibm2paper
+		  rgb ( 127,184,207 ,maxColorValue = 255 ), # rdd blue for edm2Paper
+		  rgb ( 222,147,142 ,maxColorValue = 255 ), #edm2 red
+		  rgb ( 142,120,176  ,maxColorValue = 255 )# ibm2paper ibm2 purple
+		),
+	lty = "dashed",
+	cex = 2,
+	cat.cex = 2,
+#	cat.col = c("orange", "red", "green", "blue")
+	);
+
+
+
+venn.plot <- draw.quad.venn(
+	area1 = 72, 
+	area2 = 86, 
+	area3 = 50,
+	area4 = 52,
+	n12 = 44,
+	n13 = 27,
+	n14 = 32,
+	n23 = 38,
+	n24 = 32,
+	n34 = 20,
+	n123 = 18,
+	n124 = 17,
+	n134 = 11,
+	n234 = 13,
+	n1234 = 6,
+	category = c("First", "Second", "Third", "Fourth"),
+	fill = c("orange", "red", "green", "blue"),
+	lty = "dashed",
+	cex = 2,
+	cat.cex = 2,
+	cat.col = c("orange", "red", "green", "blue")
+	);

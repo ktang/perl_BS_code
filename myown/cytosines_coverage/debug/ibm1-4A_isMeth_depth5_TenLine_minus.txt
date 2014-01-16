@@ -1,0 +1,11 @@
+chr	pos	strand	type	num_C	depth	percentage	isMeth
+chr1	109	-	CG	4	5	0.8	1
+chr1	114	+	CHG	0	6	0	0
+chr1	115	+	CG	6	6	1	1
+chr1	121	-	CHH	0	9	0	0
+chr1	123	-	CHG	7	11	0.636364	1
+chr1	135	+	CHH	1	13	0.0769231	0
+chr1	161	+	CG	17	21	0.809524	1
+chr1	177	+	CHH	3	21	0.142857	1
+chr1	209	+	CHH	0	16	0	0
+chr1	219	+	CHH	1	12	0.0833333	0

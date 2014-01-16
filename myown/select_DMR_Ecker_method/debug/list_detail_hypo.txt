@@ -1,0 +1,4 @@
+chr	start	end	informative_C_num	CG	CHG	CHH	wt_CG	wt_CG_per	wt_CHG	wt_CHG_per	wt_CHH	wt_CHH_per	mut_CG	mut_CG_per	mut_CHG	mut_CHG_per	mut_CHH	mut_CHH_per	wt_C_per	mut_C_per	wt_MethLevel_perC	mut_MethLevel_perC
+chr1	100	110	6	1	1	4	0/11=	0.0000	0/11=	0.0000	0/46=	0.0000	11/11=	100.0000	8/10=	80.0000	32/32=	100.0000	0.0000	96.2264	0.0000	96.6667
+chr1	115	150	4	1	1	2	0/12=	0.0000	0/13=	0.0000	0/29=	0.0000	10/11=	90.9091	11/11=	100.0000	23/23=	100.0000	0.0000	97.7778	0.0000	97.7273
+chr1	310	350	7	1	0	6	22/39=	56.4103	0/0=	NA	8/258=	3.1008	3/18=	16.6667	0/0=	NA	1/125=	0.8000	10.1010	2.7972	10.7806	3.0952

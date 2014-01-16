@@ -1,0 +1,1 @@
+/Users/tang58/misc/Chengguo_Duan/4_ago_methylome/method_Ecker_detail_2fold_fdiff10/downstream/heatmap/heatmap_input/final/final_color_R_heatmap_for_AGO_command_input.r

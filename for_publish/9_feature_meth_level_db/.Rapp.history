@@ -1,0 +1,506 @@
+fisher.test(matrix(c( 138, 142, 6184, 20742 ), ncol = 2))
+fisher.test(matrix(c( 214, 174, 7210, 19608 ), ncol = 2))
+fisher.test(matrix(c(  293, 187, 7966, 18760  ), ncol = 2))
+fisher.test(matrix(c(  302, 176, 8242, 18426 ), ncol = 2))
+fisher.test(matrix(c( 210, 136, 15340, 15503 ), ncol = 2))
+q("no")
+71/1905
+fisher.test(matrix( c( 34, 46, 9, 18),ncol=2))
+fisher.test(matrix( c( 9, 18,34, 46,),ncol=2))
+fisher.test(matrix( c( 9, 18,34, 46),ncol=2))
+?p.adjust
+set.seed(123)#
+x <- rnorm(50, mean=c(rep(0,25),rep(3,25)))#
+p <- 2*pnorm( sort(-abs(x)))
+x
+p
+set.seed(123)#
+x <- rnorm(10, mean=c(rep(0,25),rep(3,25)))#
+p <- 2*pnorm( sort(-abs(x)))
+x
+p
+round(p.adjust(p,"BH"), 3)
+round(2.3828033649955e-14, 5)
+round(2.3828033649955e-14, 4)
+fisher.test(matrix(0,10, 4, 90),ncol=2)
+fisher.test(matrix(c(0,10, 4, 90),ncol=2))
+fisher.test(matrix(c(0,10, 90, 90),ncol=2))
+fisher.test(matrix(c(0,0, 90, 90),ncol=2))
+fisher.test(matrix(c(0,0, 0, 90),ncol=2))
+fisher.test(matrix(c(0,0, 11110, 90),ncol=2))
+fisher.test(matrix(c(0,1000, 1, 1000),ncol=2))
+fisher.test(matrix(c(0,1000, 10, 1000),ncol=2))
+21+21+17+15*2+12*5+13+12*3+13*2+14+12+11+10+9+10+9*3
+9+11.111*2
+31.222/26
+0.238095 + 0.238095+ 0.352941+ 0.4+ 0.4+ 0.166667+ 0.25+ 0.166667+0.08333+0.0769+0.16666+0.1666+0.08333+0.15+0.08333+0.1818+0.2+0.2222+0.2+0.222*3+0.55556
+504/26
+100 / 29
+?colnames
+q("no")
+608553 + 393965 + 469196 + 371701+ 539510
+q("no")
+2130/60
+q("no")
+780-338
+442-62-42
+338*2+42+62
+338+42
+q("no")
+?fisher.test
+fisher.test( matrix ( c(2, 9, 5, 4), ncol=2 ))
+fisher.test( matrix ( c(2, 9, 5, 4), ncol=2 ), alternative="g")
+fisher.test( matrix ( c(2, 9, 5, 4), ncol=2 ), alternative="l")
+fisher.test( matrix ( c(0, 9, 2, 7), ncol=2 ), alternative="t")
+matrix(c(2, 9, 5, 4), ncol = 2)
+fisher.test( matrix ( c( 184, 369-184, 6, 232), ncol=2 ), alternative="t")
+fisher.test( matrix ( c( 4, 185, 4, 97), ncol=2 ), alternative="t")
+fisher.test( matrix ( c( 4, 185, 4, 97), ncol=2 ), alternative="g")
+fisher.test( matrix ( c( 1, 862, 0, 564), ncol=2 ), alternative="g")
+fisher.test( matrix ( c( 1129, 2367 - 1129, 777, 1664-777), ncol=2 ), alternative="g")
+fisher.test( matrix ( c( 4,2323, 4,1567), ncol=2 ), alternative="g")
+?fisher.test
+fisher.test( matrix ( c(  1689, 4021 - 1689, 1853, 6455- 1853), ncol=2 ), alternative="g")
+q("no")
+2804057-2800871
+fisher.test(matrix( c(), ncol=2))
+fisher.test(matrix( c(0,4, 3,1), ncol=2))
+fisher.test(matrix( c(0,4, 4,0), ncol=2))
+fisher.test(matrix( c(0,5, 5,0), ncol=2))
+fisher.test(matrix( c(0,4, 5,0), ncol=2))
+2560*2560
+3054326 *2
+log2(35462)
+log2(35462/406)
+log2(36897/488)
+q("no")
+3/11
+2/11
+1/23
+6/45
+22/39
+3/40
+25/79
+200/28
+900/29
+26/87
+6.51+9.22
+15.73*0.8
+(18.65+4.8+6.98)*0.8
+(16.17+5.5)*0.8
+(10.85+8.44)*0.8
+3.2*3.39
+3.39*2.49
+8.44*0.8
+q("no")
+10.75 *2.54
+9.5*2.54
+q("no")
+6.45+8.89+6.3
+q("no")
+60 + (9.99 + 1.22) * 3 + 4.01
+97.64/4
+60 + (9.99 + 1.22) * 3 + 4.01  - 12
+85.64/4
+21.41 + 15 + 6
+21.41 + 15 + 4.4
+42.01 + 21.41+ 42.41+ 40.81
+q("no")
+abs(-1)
+min(2,4,6)
+?min
+q("no")
+library()
+library(BSgenome.Athaliana.TAIR.TAIR9)
+Athaliana$Chr1[0]
+Athaliana$Chr1[1]
+q("no")
+log(120000000) / log(4)
+35168580/4
+2.4/8.8
+2209704 + 352474
+139626 * 4
+35168580 / 4
+q("no")
+1.1*1.05*1.1
+q("no")
+1.08*1.08
+q("no")
+2^(0.0606727155958078)
+2^(-0.170319949889695)
+2^(-0.40807289932785)
+2^(-0.148047302480345)
+q("no")
+3096+578
+q("no")
+?boxplot
+78.65+48.15+43.66+26.75+85
+q("no")
+?read.dcf
+a = <- read.dcf(file = system.file("CONTENTS", package = "splines"),#
+              fields = c("Entry", "Description"))
+a <- read.dcf(file = system.file("CONTENTS", package = "splines"),#
+              fields = c("Entry", "Description"))
+library(GenomicRanges)
+?Rle
+gr <- GRanges(seqnames = Rle(c("chr1", "chr2", "chr1", "chr3"), c(1, 3, 2, 4)), ranges = IRanges(1:10, end = 7:16, names = head(letters, 10)), strand = Rle(strand(c("-", "+", "*", "+", "-")), c(1, 2, 2, 3, 2)), score = 1:10, GC = seq(1, 0, length = 10))
+gr
+?GRanges
+?IRanges
+?seq
+?rep
+ls()
+q("no")
+27622756 / 390080266
+q("no")
+35+22+5
+41+36+177
+1/13
+7/19
+2.638889/3
+0.818182+0.25+0.769231
+8+10+11+11+12+17+18+16+15+14+15*3
+2.638889	+1.837413+	0.625
+5.101302 / 19
+5/29
+8/29
+0.625/3
+5/29
+0.785714 /3
+22/23
+12/23
+18/19
+12/19
+34/57
+31/38
+31/47
+30/47
+1.916667/2
+1.888889/2
+0.818182+0.25
+1.068182/2
+(1.888889+1.068182 )/5
+(1.888889+1.25 )/5
+(0.818182+1+0.25+0.916667)
+(0.818182+1+0.25+0.916667)/5
+(0.888889*2+1.4)/5
+q("no")
+320 + 13 +8 +7+ 15 + 9 +88 +100 +5 +110
+85*2.5
+2+4+1+1+1+1+1+1+1+1+1+1+2+1+4+1+1+2+2+3+
+0
+q("no")
+x = c(30427671, 19698289, 23459830, 18585056, 26975502 );
+sum(x[1:2])
+sum(x[1:3])
+sum(x[1:4])
+sum(x[1:5])
+0 + 15000000 #
+ 30427671 + 3600000  #
+ 50125960 + 13500000#
+ 73585790 + 3920000#
+ 92170846 + 11700000
+q("no")
+17/4
+11.19/55.95
+5.39/85.95
+5.39/55.95
+55.95*0.09
+55.95*0.096
+55.95*0.097
+85.95*8.491
+55.95*8.491/100
+9.75+4.25
+14*0.3
+14*0.28491
+9.75+17/4
+14*1.3+5-2
+14*1.3
+14*1.24891+3
+14*1.24891+5
+q("no")
+library("VennDiagram")
+?draw.
+?draw.quad.venn
+venn.plot <- draw.quad.venn(#
+	area1 = 72, #
+	area2 = 86, #
+	area3 = 50,#
+	area4 = 52,#
+	n12 = 44,#
+	n13 = 27,#
+	n14 = 32,#
+	n23 = 38,#
+	n24 = 32,#
+	n34 = 20,#
+	n123 = 18,#
+	n124 = 17,#
+	n134 = 11,#
+	n234 = 13,#
+	n1234 = 6,#
+	category = c("First", "Second", "Third", "Fourth"),#
+	fill = c("orange", "red", "green", "blue"),#
+	lty = "dashed",#
+	cex = 2,#
+	cat.cex = 2,#
+	cat.col = c("orange", "red", "green", "blue")#
+	);
+?draw.pairwise.venn
+3654+486+41+2198+85+41+80+81
+3855+3654+2198+327+85+42+80+90
+3399+173+41+81+85+80+42+90
+venn.plot <- draw.quad.venn(#
+	area1 = 72, #
+	area2 = 86, #
+	area3 = 50,#
+	area4 = 52,#
+	n12 = 44,#
+	n13 = 27,#
+	n14 = 32,#
+	n23 = 38,#
+	n24 = 32,#
+	n34 = 20,#
+	n123 = 18,#
+	n124 = 17,#
+	n134 = 11,#
+	n234 = 13,#
+	n1234 = 6,#
+	category = c("First", "Second", "Third", "Fourth"),#
+	fill = c("orange", "red", "green", "blue"),#
+	lty = "dashed",#
+	cex = 2,#
+	cat.cex = 2,#
+	cat.col = c("orange", "red", "green", "blue")#
+	);
+85+42+80+90
+3654+2198+85+80
+2198+85+327+42
+85+41+80+81
+173+41+85+42
+2198+41+41+85
+venn.plot <- draw.quad.venn(#
+	area1 = 10331, #
+	area2 = 3991, #
+	area3 = 6666,#
+	area4 = 3272,#
+	n12 = 297,#
+	n13 = 6017,#
+	n14 = 2652,#
+	n23 = 287,#
+	n24 = 341,#
+	n34 = 2365,#
+	n123 = 80,#
+	n124 = 42,#
+	n134 = 2198,#
+	n234 = 41,#
+	n1234 = 85,#
+	#category = c("First", "Second", "Third", "Fourth"),#
+	category = c("ibm1", "rdd", "edm2", "ibm2"),#
+#
+#	fill = c("orange", "red", "green", "blue"),#
+	fill = c( rgb (177,199,112  ,maxColorValue = 255 ), # ibm1 green for ibm2paper#
+		  rgb ( 127,184,207 ,maxColorValue = 255 ) # rdd blue for edm2Paper#
+		  rgb ( 222,147,142 ,maxColorValue = 255 ), #edm2 red#
+		  rgb ( 142,120,176  ,maxColorValue = 255 ), # ibm2paper ibm2 purple#
+		),#
+	lty = "dashed",#
+	cex = 2,#
+	cat.cex = 2,#
+#	cat.col = c("orange", "red", "green", "blue")#
+	);
+venn.plot <- draw.quad.venn(#
+	area1 = 10331, #
+	area2 = 3991, #
+	area3 = 6666,#
+	area4 = 3272,#
+	n12 = 297,#
+	n13 = 6017,#
+	n14 = 2652,#
+	n23 = 287,#
+	n24 = 341,#
+	n34 = 2365,#
+	n123 = 80,#
+	n124 = 42,#
+	n134 = 2198,#
+	n234 = 41,#
+	n1234 = 85,#
+	#category = c("First", "Second", "Third", "Fourth"),#
+	category = c("ibm1", "rdd", "edm2", "ibm2"),#
+#
+#	fill = c("orange", "red", "green", "blue"),#
+	fill = c( rgb (177,199,112  ,maxColorValue = 255 ), # ibm1 green for ibm2paper#
+		  rgb ( 127,184,207 ,maxColorValue = 255 ) # rdd blue for edm2Paper#
+		  rgb ( 222,147,142 ,maxColorValue = 255 ), #edm2 red#
+		  rgb ( 142,120,176  ,maxColorValue = 255 )# ibm2paper ibm2 purple#
+		),#
+	lty = "dashed",#
+	cex = 2,#
+	cat.cex = 2,#
+#	cat.col = c("orange", "red", "green", "blue")#
+	);
+venn.plot <- draw.quad.venn(#
+	area1 = 10331, #
+	area2 = 3991, #
+	area3 = 6666,#
+	area4 = 3272,#
+	n12 = 297,#
+	n13 = 6017,#
+	n14 = 2652,#
+	n23 = 287,#
+	n24 = 341,#
+	n34 = 2365,#
+	n123 = 80,#
+	n124 = 42,#
+	n134 = 2198,#
+	n234 = 41,#
+	n1234 = 85,#
+	#category = c("First", "Second", "Third", "Fourth"),#
+	category = c("ibm1", "rdd", "edm2", "ibm2"),#
+#
+#	fill = c("orange", "red", "green", "blue"),#
+	fill = c( rgb (177,199,112  ,maxColorValue = 255 ), # ibm1 green for ibm2paper#
+		  rgb ( 127,184,207 ,maxColorValue = 255 ), # rdd blue for edm2Paper#
+		  rgb ( 222,147,142 ,maxColorValue = 255 ), #edm2 red#
+		  rgb ( 142,120,176  ,maxColorValue = 255 )# ibm2paper ibm2 purple#
+		),#
+	lty = "dashed",#
+	cex = 2,#
+	cat.cex = 2,#
+#	cat.col = c("orange", "red", "green", "blue")#
+	);
+dev.off()
+?draw.quad.venn
+venn.plot <- draw.quad.venn(#
+	area1 = 10331, #
+	area2 = 3991, #
+	area3 = 6666,#
+	area4 = 3272,#
+	n12 = 297,#
+	n13 = 6017,#
+	n14 = 2652,#
+	n23 = 287,#
+	n24 = 341,#
+	n34 = 2365,#
+#
+	n123 = 165,#
+	n124 = 127,#
+	n134 = 2198 + 85,#
+	n234 = 41+85,#
+	n1234 = 85,#
+	#category = c("First", "Second", "Third", "Fourth"),#
+	category = c("ibm1", "rdd", "edm2", "ibm2"),#
+#
+#	fill = c("orange", "red", "green", "blue"),#
+	fill = c( rgb (177,199,112  ,maxColorValue = 255 ), # ibm1 green for ibm2paper#
+		  rgb ( 127,184,207 ,maxColorValue = 255 ), # rdd blue for edm2Paper#
+		  rgb ( 222,147,142 ,maxColorValue = 255 ), #edm2 red#
+		  rgb ( 142,120,176  ,maxColorValue = 255 )# ibm2paper ibm2 purple#
+		),#
+	lty = "dashed",#
+	cex = 2,#
+	cat.cex = 2,#
+#	cat.col = c("orange", "red", "green", "blue")#
+	);
+q("no")
+3218 + 1835 + 15262214*2 + 1042182 + 1112708
+12482529 + 11440362
+q("no")
+941+1035+379+151+5410+344+95+1366+81+1781+4181+12945+213+74+104+131+129+1829
+75544 / 4.092
+q("no")
+setwd("/Users/tang58/Kai_BS/for_publish/9_feature_meth_level_db")
+files = dir(pattern="TAIR10")
+files
+x_data = list()#
+#
+for (i in 1:length(files)){ x_data[[i]] = read.table(files[i], head=T, sep = "\t") }#
+#
+length = length(files)#
+#
+x_lables =  sub("(.+)_DMRs_.+.txt", "\\1", files, perl =T)#
+#
+max_y = max (unlist(lapply(x_data, function(x) max(x[,4 ]) ) ) )  ##
+#
+if(FALSE){#
+cols_db =  c( #
+#rgb(153, 153, 153, maxColorValue = 255), #grey#
+rgb ( 222,147,142 ,maxColorValue = 255 ), #edm2 red#
+rgb (200,226, 126  ,maxColorValue = 255 ), # ibm1 green#
+rgb ( 160, 132, 200  ,maxColorValue = 255 ) # rdd purple#
+#
+#rgb( 0, 255, 255, maxColorValue = 255)   #blue#
+#
+)#
+}#
+cols_db =  c( #
+#rgb(153, 153, 153, maxColorValue = 255), #grey#
+rgb ( 222,147,142 ,maxColorValue = 255 ), #edm2 red#
+#
+#rgb (200,226, 126  ,maxColorValue = 255 ), # ibm1 green#
+rgb (177,199,112  ,maxColorValue = 255 ), # ibm1 green for ibm2paper#
+#rgb ( 160, 132, 200  ,maxColorValue = 255 ) # rdd purple#
+#
+rgb ( 142,120,176  ,maxColorValue = 255 ), # ibm2paper ibm2 purple#
+#
+#rgb ( 160, 132, 200  ,maxColorValue = 255 ) # rdd purple for edm2Paper#
+rgb ( 127,184,207 ,maxColorValue = 255 ) # rdd blue for edm2Paper#
+#rgb( 0, 255, 255, maxColorValue = 255)   #blue#
+#
+)#
+cols = cols_db[1:length];#
+#x = read.table("sk460A_edm2_vs_colA_hyper_DMR_number_WinSize500000_sliding500000.txt", head=T)#
+#y =read.table("ibm1_vs_colA_hyper_DMR_number_WinSize500000_sliding500000.txt",head=T)#
+#
+par(mar = c(6, 6 , 2, 1))#
+#
+#plot( y[,5],y[,4], type="l" , col = "blue", ylab = "Number of DMRs / 500kb",  xaxt="n", cex.lab =  1.5, xlab="", cex.axis = 1.5, cex.main = 2, lwd = 2 )#
+# lines(x[,5],x[,4],col="red",lwd = 2 )#
+#
+plot( x_data[[1]][,5] , x_data[[1]][,4] , #
+		ylim = c(0, max_y),#
+		type="l" , #
+		col = cols_db[1], #
+		ylab = "Number of DMRs / 500kb", #
+		font.lab = 2,#
+	xlab = "Chromosome",#
+#xlab="", #
+		xaxt="n", #
+		cex.lab =  1.5, #
+		cex.axis = 1.5, #
+		cex.main = 2, #
+		lwd = 2,#
+		las = 1#
+)#
+for (i in 2:length(files)){#
+	lines(x_data[[i]][,5] , x_data[[i]][,4] , #
+		  col= cols_db[i],#
+		  lwd = 2 #
+		  )#
+}#
+#> x = c(30427671, 19698289, 23459830, 18585056, 26975502 );#
+#> sum(x[1:2])#
+#[1] 50125960#
+#> sum(x[1:3])#
+#[1] 73585790#
+#> sum(x[1:4])#
+#[1] 92170846#
+#> sum(x[1:5])#
+#[1] 119146348#
+#
+# #
+#
+abline( v = 30427671, col = gray_col , lwd = lwd_abline )#
+abline( v = 50125960, col = gray_col, lwd = lwd_abline )#
+abline( v = 73585790, col = gray_col, lwd = lwd_abline )#
+abline( v = 92170846 , col = gray_col, lwd = lwd_abline )
+gray_col = "gray70"#
+lwd_abline = 1.5
+abline( v = 30427671, col = gray_col , lwd = lwd_abline )#
+abline( v = 50125960, col = gray_col, lwd = lwd_abline )#
+abline( v = 73585790, col = gray_col, lwd = lwd_abline )#
+abline( v = 92170846 , col = gray_col, lwd = lwd_abline )
+source('http://www.bioconductor.org/biocLite.R')
+biocLite('cummeRbund')
+library()
+ls()
+q("no")

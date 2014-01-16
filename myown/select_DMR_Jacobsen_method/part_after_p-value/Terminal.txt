@@ -1,0 +1,270 @@
+###########################################
+#	gap 100
+##########################################
+
+~/Kai_BS/myown/select_DMR_Jacobsen_method/part_after_p-value/debug_rdd_ros1/gap100_15:35:59_N=580$ time perl  ../../select_DMR_Jacobsen_method_after_p_adj_v1.0.pl ../JKZ134_ros1-4_s1_vs_JKZ131_Col0_BinSize200_sliding50_BH_adj_p_value0.05_depth5_p_adj.txt  /Volumes/Macintosh_HD_2/idm1idm2_double_mutant_Sep1/Sep12/2_depth5_2Group/Kaust/isMeth/JKZ131_Col0_s8_isMeth_depth5.txt /Volumes/Macintosh_HD_2/idm1idm2_double_mutant_Sep1/Sep12/2_depth5_2Group/Kaust/isMeth/JKZ134_ros1-4_s1_isMeth_depth5.txt . JKZ134_ros1-4_s1_vs_JKZ131_Col0
+Done
+
+
+
+start read isMeth files...	Done                                                                              
+handle hyper list...
+before_merge	119420
+after_merge	22038
+adjust border and filter DMC...
+after_adjusted	11060
+read_isMeth_get_mC_dep
+Done
+begin_last_filter
+last_filter	7645
+output...
+Hyper Done
+
+
+handle hypo list...
+before_merge	24247
+after_merge	8731
+adjust border and filter DMC...
+after_adjusted	2802
+read_isMeth_get_mC_dep
+Done
+begin_last_filter
+last_filter	375
+output...
+Done
+
+
+real	18m31.283s
+user	17m18.326s
+sys	0m16.724s
+
+
+~/Kai_BS/myown/select_DMR_Jacobsen_method/part_after_p-value/debug_rdd_ros1/gap100_15:38:25_N=544$ time perl  ../../select_DMR_Jacobsen_method_after_p_adj_v1.0.pl ../rdd_kaust_pool_vs_JKZ131_Col0_BinSize200_sliding50_BH_adj_p_value0.05_depth5_p_adj.txt  /Volumes/Macintosh_HD_2/idm1idm2_double_mutant_Sep1/Sep12/2_depth5_2Group/Kaust/isMeth/JKZ131_Col0_s8_isMeth_depth5.txt /Volumes/Macintosh_HD_2/idm1idm2_double_mutant_Sep1/Sep12/2_depth5_2Group/Kaust/isMeth/rdd_kaust_pool_isMeth_depth5.txt . rdd_kaust_nodupl_pool_vs_JKZ131_Col0
+Done
+
+
+
+start read isMeth files...	Done
+handle hyper list...
+before_merge	188121
+after_merge	32886
+adjust border and filter DMC...
+after_adjusted	15461
+read_isMeth_get_mC_dep
+Done
+begin_last_filter
+last_filter	10821
+output...
+Hyper Done
+
+
+handle hypo list...
+before_merge	40091
+after_merge	11994
+adjust border and filter DMC...
+after_adjusted	2356
+read_isMeth_get_mC_dep
+Done
+begin_last_filter
+last_filter	1028
+output...
+Done
+
+
+real	18m2.259s
+user	17m18.856s
+sys	0m13.215s
+
+
+###########################################
+#	gap 0
+##########################################
+~/Kai_BS/myown/select_DMR_Jacobsen_method/part_after_p-value/debug_rdd_ros1/gap0_16:28:17_N=606$ time perl  ../../select_DMR_Jacobsen_method_after_p_adj_v1.0.1.pl ../JKZ134_ros1-4_s1_vs_JKZ131_Col0_BinSize200_sliding50_BH_adj_p_value0.05_depth5_p_adj.txt  /Volumes/Macintosh_HD_2/idm1idm2_double_mutant_Sep1/Sep12/2_depth5_2Group/Kaust/isMeth/JKZ131_Col0_s8_isMeth_depth5.txt /Volumes/Macintosh_HD_2/idm1idm2_double_mutant_Sep1/Sep12/2_depth5_2Group/Kaust/isMeth/JKZ134_ros1-4_s1_isMeth_depth5.txt . JKZ134_ros1-4_s1_vs_JKZ131_Col0
+Done
+
+
+
+start read isMeth files...	Done
+handle hyper list...
+before_merge	119420
+after_merge	23189
+adjust border and filter DMC...
+after_adjusted	11446
+read_isMeth_get_mC_dep
+Done
+begin_last_filter
+last_filter	8091
+output...
+Hyper Done
+
+
+handle hypo list...
+before_merge	24247
+after_merge	8892
+adjust border and filter DMC...
+after_adjusted	2803
+read_isMeth_get_mC_dep
+Done
+begin_last_filter
+last_filter	383
+output...
+Done
+
+
+real	17m17.271s
+user	16m55.155s
+sys	0m11.125s
+
+
+~/Kai_BS/myown/select_DMR_Jacobsen_method/part_after_p-value/debug_rdd_ros1/gap0_15:45:49_N=574$ time perl  ../../select_DMR_Jacobsen_method_after_p_adj_v1.0.1.pl ../rdd_kaust_pool_vs_JKZ131_Col0_BinSize200_sliding50_BH_adj_p_value0.05_depth5_p_adj.txt  /Volumes/Macintosh_HD_2/idm1idm2_double_mutant_Sep1/Sep12/2_depth5_2Group/Kaust/isMeth/JKZ131_Col0_s8_isMeth_depth5.txt /Volumes/Macintosh_HD_2/idm1idm2_double_mutant_Sep1/Sep12/2_depth5_2Group/Kaust/isMeth/rdd_kaust_pool_isMeth_depth5.txt . rdd_kaust_nodupl_pool_vs_JKZ131_Col0
+Done
+
+
+
+start read isMeth files...	Done
+handle hyper list...
+before_merge	188121
+after_merge	35486
+adjust border and filter DMC...
+after_adjusted	15833
+read_isMeth_get_mC_dep
+Done
+begin_last_filter
+last_filter	11517
+output...
+Hyper Done
+
+
+handle hypo list...
+before_merge	40091
+after_merge	12578
+adjust border and filter DMC...
+after_adjusted	2240
+read_isMeth_get_mC_dep
+Done
+begin_last_filter
+last_filter	1031
+output...
+Done
+
+
+real	17m29.236s
+user	17m8.500s
+sys	0m11.117s
+
+###########################
+#	1e-10 no filter
+##########################
+~/Kai_BS/myown/select_DMR_Jacobsen_method/part_after_p-value/debug_rdd_ros1/p-value_gap0_22:46:46_N=743$ time perl ../../select_DMR_Jacobsen_method_after_p_adj_v2.0.pl ../JKZ134_ros1-4_s1_vs_JKZ131_Col0_BinSize200_sliding50_BH_adj_p_value0.05_depth5_p_adj.txt  /Volumes/Macintosh_HD_2/idm1idm2_double_mutant_Sep1/Sep12/2_depth5_2Group/Kaust/isMeth/JKZ131_Col0_s8_isMeth_depth5.txt /Volumes/Macintosh_HD_2/idm1idm2_double_mutant_Sep1/Sep12/2_depth5_2Group/Kaust/isMeth/JKZ134_ros1-4_s1_isMeth_depth5.txt . JKZ134_ros1-4_s1_vs_JKZ131_Col0 1e-10
+Done
+
+handle hyper list...
+before_merge	72442
+after_merge	15044
+read_isMeth_get_mC_dep
+Done
+last_filter	15044
+output...
+Hyper Done
+
+
+handle hypo list...
+before_merge	8239
+after_merge	3270
+read_isMeth_get_mC_dep
+Done
+last_filter	0
+output...
+Done
+
+
+real	11m37.106s
+user	11m18.099s
+sys	0m6.513s
+
+
+~/Kai_BS/myown/select_DMR_Jacobsen_method/part_after_p-value/debug_rdd_ros1/p-value_gap0_22:47:52_N=593$ time perl ../../select_DMR_Jacobsen_method_after_p_adj_v2.0.pl ../rdd_kaust_pool_vs_JKZ131_Col0_BinSize200_sliding50_BH_adj_p_value0.05_depth5_p_adj.txt /Volumes/Macintosh_HD_2/idm1idm2_double_mutant_Sep1/Sep12/2_depth5_2Group/Kaust/isMeth/JKZ131_Col0_s8_isMeth_depth5.txt /Volumes/Macintosh_HD_2/idm1idm2_double_mutant_Sep1/Sep12/2_depth5_2Group/Kaust/isMeth/rdd_kaust_pool_isMeth_depth5.txt . rdd_kaust_pool_vs_JKZ131_Col0 1e-10
+Done
+
+handle hyper list...
+before_merge	118361
+after_merge	25070
+read_isMeth_get_mC_dep
+Done
+last_filter	25070
+output...
+Hyper Done
+
+
+handle hypo list...
+before_merge	21201
+after_merge	7009
+read_isMeth_get_mC_dep
+Done
+last_filter	0
+output...
+Done
+
+
+real	11m38.530s
+user	11m30.617s
+sys	0m5.205s
+
+###########################
+#	1e-20 no filter
+##########################
+~/Kai_BS/myown/select_DMR_Jacobsen_method/part_after_p-value/debug_rdd_ros1/p-value_gap0_08:53:17_N=747$ time perl ../../select_DMR_Jacobsen_method_after_p_adj_v2.0.pl ../JKZ134_ros1-4_s1_vs_JKZ131_Col0_BinSize200_sliding50_BH_adj_p_value0.05_depth5_p_adj.txt  /Volumes/Macintosh_HD_2/idm1idm2_double_mutant_Sep1/Sep12/2_depth5_2Group/Kaust/isMeth/JKZ131_Col0_s8_isMeth_depth5.txt /Volumes/Macintosh_HD_2/idm1idm2_double_mutant_Sep1/Sep12/2_depth5_2Group/Kaust/isMeth/JKZ134_ros1-4_s1_isMeth_depth5.txt . JKZ134_ros1-4_s1_vs_JKZ131_Col0 1e-20
+Done
+
+handle hyper list...
+before_merge	35877
+after_merge	8141
+read_isMeth_get_mC_dep
+Done
+last_filter	8141
+output...
+Hyper Done
+
+
+handle hypo list...
+before_merge	1665
+after_merge	724
+read_isMeth_get_mC_dep
+Done
+last_filter	0
+output...
+Done
+
+
+real	11m40.581s
+user	11m11.385s
+sys	0m5.634s
+
+
+~/Kai_BS/myown/select_DMR_Jacobsen_method/part_after_p-value/debug_rdd_ros1/p-value_gap0_08:53:18_N=598$ time perl ../../select_DMR_Jacobsen_method_after_p_adj_v2.0.pl ../rdd_kaust_pool_vs_JKZ131_Col0_BinSize200_sliding50_BH_adj_p_value0.05_depth5_p_adj.txt /Volumes/Macintosh_HD_2/idm1idm2_double_mutant_Sep1/Sep12/2_depth5_2Group/Kaust/isMeth/JKZ131_Col0_s8_isMeth_depth5.txt /Volumes/Macintosh_HD_2/idm1idm2_double_mutant_Sep1/Sep12/2_depth5_2Group/Kaust/isMeth/rdd_kaust_pool_isMeth_depth5.txt . rdd_kaust_pool_vs_JKZ131_Col0 1e-20
+Done
+
+handle hyper list...
+before_merge	58983
+after_merge	14290
+read_isMeth_get_mC_dep
+Done
+last_filter	14290
+output...
+Hyper Done
+
+
+handle hypo list...
+before_merge	8248
+after_merge	2830
+read_isMeth_get_mC_dep
+Done
+last_filter	0
+output...
+Done
+
+
+real	11m13.448s
+user	11m4.510s
+sys	0m5.596s
+

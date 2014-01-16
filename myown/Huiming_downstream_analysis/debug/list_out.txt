@@ -1,0 +1,4 @@
+chr	start	end	ah	score
+chr1	1	50	a	0.111111
+chr1	55	100	h	0.1961721
+chr1	327010	327023	c	0.2625

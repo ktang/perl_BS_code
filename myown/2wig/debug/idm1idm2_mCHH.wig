@@ -1,0 +1,4 @@
+track	type=wiggle_0	name="idm1idm2"	description="idm1idm2 CHH methlation"	viewLimits=-1.0:1.0	color=205,155,155
+variableStep	chrom=chr1
+177	0.166667
+219	0.2

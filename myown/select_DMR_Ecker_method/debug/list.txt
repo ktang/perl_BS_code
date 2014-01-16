@@ -1,0 +1,4 @@
+chr	start	end
+chr1	100	110
+chr1	115	150
+chr1	310	350

@@ -1,0 +1,1 @@
+/Users/tang58/misc/Zhaobo_Lang/5_35S_SUC2_meth_level/map2_35S/brat_bw_one_step_one_dir_nodupl_AndDupl_NoUnzip_NoTrim.pl

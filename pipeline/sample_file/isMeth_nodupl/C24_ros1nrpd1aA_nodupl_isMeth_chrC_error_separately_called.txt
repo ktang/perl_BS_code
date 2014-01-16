@@ -1,0 +1,10 @@
+chr	pos	strand	type	num_C	depth	percentage	isMeth
+chr1	1	+	CHH	0	0	0	0
+chr1	2	+	CHH	0	0	0	0
+chr1	3	+	CHH	0	0	0	0
+chr1	8	+	CHH	0	0	0	0
+chr1	9	+	CHH	0	0	0	0
+chr1	10	+	CHH	0	0	0	0
+chr1	15	+	CHH	0	0	0	0
+chr1	16	+	CHH	0	0	0	0
+chr1	17	+	CHH	0	0	0	0

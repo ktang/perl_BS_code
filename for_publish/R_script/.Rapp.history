@@ -1,0 +1,807 @@
+60 + (9.99 + 1.22) * 3 + 4.01
+97.64/4
+60 + (9.99 + 1.22) * 3 + 4.01  - 12
+85.64/4
+21.41 + 15 + 6
+21.41 + 15 + 4.4
+42.01 + 21.41+ 42.41+ 40.81
+q("no")
+abs(-1)
+min(2,4,6)
+?min
+q("no")
+library()
+library(BSgenome.Athaliana.TAIR.TAIR9)
+Athaliana$Chr1[0]
+Athaliana$Chr1[1]
+q("no")
+log(120000000) / log(4)
+35168580/4
+2.4/8.8
+2209704 + 352474
+139626 * 4
+35168580 / 4
+q("no")
+1.1*1.05*1.1
+q("no")
+1.08*1.08
+q("no")
+2^(0.0606727155958078)
+2^(-0.170319949889695)
+2^(-0.40807289932785)
+2^(-0.148047302480345)
+q("no")
+3096+578
+q("no")
+?boxplot
+78.65+48.15+43.66+26.75+85
+q("no")
+?read.dcf
+a = <- read.dcf(file = system.file("CONTENTS", package = "splines"),#
+              fields = c("Entry", "Description"))
+a <- read.dcf(file = system.file("CONTENTS", package = "splines"),#
+              fields = c("Entry", "Description"))
+library(GenomicRanges)
+?Rle
+gr <- GRanges(seqnames = Rle(c("chr1", "chr2", "chr1", "chr3"), c(1, 3, 2, 4)), ranges = IRanges(1:10, end = 7:16, names = head(letters, 10)), strand = Rle(strand(c("-", "+", "*", "+", "-")), c(1, 2, 2, 3, 2)), score = 1:10, GC = seq(1, 0, length = 10))
+gr
+?GRanges
+?IRanges
+?seq
+?rep
+ls()
+q("no")
+27622756 / 390080266
+q("no")
+35+22+5
+41+36+177
+1/13
+7/19
+2.638889/3
+0.818182+0.25+0.769231
+8+10+11+11+12+17+18+16+15+14+15*3
+2.638889	+1.837413+	0.625
+5.101302 / 19
+5/29
+8/29
+0.625/3
+5/29
+0.785714 /3
+22/23
+12/23
+18/19
+12/19
+34/57
+31/38
+31/47
+30/47
+1.916667/2
+1.888889/2
+0.818182+0.25
+1.068182/2
+(1.888889+1.068182 )/5
+(1.888889+1.25 )/5
+(0.818182+1+0.25+0.916667)
+(0.818182+1+0.25+0.916667)/5
+(0.888889*2+1.4)/5
+q("no")
+320 + 13 +8 +7+ 15 + 9 +88 +100 +5 +110
+85*2.5
+2+4+1+1+1+1+1+1+1+1+1+1+2+1+4+1+1+2+2+3+
+0
+q("no")
+x = c(30427671, 19698289, 23459830, 18585056, 26975502 );
+sum(x[1:2])
+sum(x[1:3])
+sum(x[1:4])
+sum(x[1:5])
+0 + 15000000 #
+ 30427671 + 3600000  #
+ 50125960 + 13500000#
+ 73585790 + 3920000#
+ 92170846 + 11700000
+q("no")
+17/4
+11.19/55.95
+5.39/85.95
+5.39/55.95
+55.95*0.09
+55.95*0.096
+55.95*0.097
+85.95*8.491
+55.95*8.491/100
+9.75+4.25
+14*0.3
+14*0.28491
+9.75+17/4
+14*1.3+5-2
+14*1.3
+14*1.24891+3
+14*1.24891+5
+q("no")
+library("VennDiagram")
+?draw.
+?draw.quad.venn
+venn.plot <- draw.quad.venn(#
+	area1 = 72, #
+	area2 = 86, #
+	area3 = 50,#
+	area4 = 52,#
+	n12 = 44,#
+	n13 = 27,#
+	n14 = 32,#
+	n23 = 38,#
+	n24 = 32,#
+	n34 = 20,#
+	n123 = 18,#
+	n124 = 17,#
+	n134 = 11,#
+	n234 = 13,#
+	n1234 = 6,#
+	category = c("First", "Second", "Third", "Fourth"),#
+	fill = c("orange", "red", "green", "blue"),#
+	lty = "dashed",#
+	cex = 2,#
+	cat.cex = 2,#
+	cat.col = c("orange", "red", "green", "blue")#
+	);
+?draw.pairwise.venn
+3654+486+41+2198+85+41+80+81
+3855+3654+2198+327+85+42+80+90
+3399+173+41+81+85+80+42+90
+venn.plot <- draw.quad.venn(#
+	area1 = 72, #
+	area2 = 86, #
+	area3 = 50,#
+	area4 = 52,#
+	n12 = 44,#
+	n13 = 27,#
+	n14 = 32,#
+	n23 = 38,#
+	n24 = 32,#
+	n34 = 20,#
+	n123 = 18,#
+	n124 = 17,#
+	n134 = 11,#
+	n234 = 13,#
+	n1234 = 6,#
+	category = c("First", "Second", "Third", "Fourth"),#
+	fill = c("orange", "red", "green", "blue"),#
+	lty = "dashed",#
+	cex = 2,#
+	cat.cex = 2,#
+	cat.col = c("orange", "red", "green", "blue")#
+	);
+85+42+80+90
+3654+2198+85+80
+2198+85+327+42
+85+41+80+81
+173+41+85+42
+2198+41+41+85
+venn.plot <- draw.quad.venn(#
+	area1 = 10331, #
+	area2 = 3991, #
+	area3 = 6666,#
+	area4 = 3272,#
+	n12 = 297,#
+	n13 = 6017,#
+	n14 = 2652,#
+	n23 = 287,#
+	n24 = 341,#
+	n34 = 2365,#
+	n123 = 80,#
+	n124 = 42,#
+	n134 = 2198,#
+	n234 = 41,#
+	n1234 = 85,#
+	#category = c("First", "Second", "Third", "Fourth"),#
+	category = c("ibm1", "rdd", "edm2", "ibm2"),#
+#
+#	fill = c("orange", "red", "green", "blue"),#
+	fill = c( rgb (177,199,112  ,maxColorValue = 255 ), # ibm1 green for ibm2paper#
+		  rgb ( 127,184,207 ,maxColorValue = 255 ) # rdd blue for edm2Paper#
+		  rgb ( 222,147,142 ,maxColorValue = 255 ), #edm2 red#
+		  rgb ( 142,120,176  ,maxColorValue = 255 ), # ibm2paper ibm2 purple#
+		),#
+	lty = "dashed",#
+	cex = 2,#
+	cat.cex = 2,#
+#	cat.col = c("orange", "red", "green", "blue")#
+	);
+venn.plot <- draw.quad.venn(#
+	area1 = 10331, #
+	area2 = 3991, #
+	area3 = 6666,#
+	area4 = 3272,#
+	n12 = 297,#
+	n13 = 6017,#
+	n14 = 2652,#
+	n23 = 287,#
+	n24 = 341,#
+	n34 = 2365,#
+	n123 = 80,#
+	n124 = 42,#
+	n134 = 2198,#
+	n234 = 41,#
+	n1234 = 85,#
+	#category = c("First", "Second", "Third", "Fourth"),#
+	category = c("ibm1", "rdd", "edm2", "ibm2"),#
+#
+#	fill = c("orange", "red", "green", "blue"),#
+	fill = c( rgb (177,199,112  ,maxColorValue = 255 ), # ibm1 green for ibm2paper#
+		  rgb ( 127,184,207 ,maxColorValue = 255 ) # rdd blue for edm2Paper#
+		  rgb ( 222,147,142 ,maxColorValue = 255 ), #edm2 red#
+		  rgb ( 142,120,176  ,maxColorValue = 255 )# ibm2paper ibm2 purple#
+		),#
+	lty = "dashed",#
+	cex = 2,#
+	cat.cex = 2,#
+#	cat.col = c("orange", "red", "green", "blue")#
+	);
+venn.plot <- draw.quad.venn(#
+	area1 = 10331, #
+	area2 = 3991, #
+	area3 = 6666,#
+	area4 = 3272,#
+	n12 = 297,#
+	n13 = 6017,#
+	n14 = 2652,#
+	n23 = 287,#
+	n24 = 341,#
+	n34 = 2365,#
+	n123 = 80,#
+	n124 = 42,#
+	n134 = 2198,#
+	n234 = 41,#
+	n1234 = 85,#
+	#category = c("First", "Second", "Third", "Fourth"),#
+	category = c("ibm1", "rdd", "edm2", "ibm2"),#
+#
+#	fill = c("orange", "red", "green", "blue"),#
+	fill = c( rgb (177,199,112  ,maxColorValue = 255 ), # ibm1 green for ibm2paper#
+		  rgb ( 127,184,207 ,maxColorValue = 255 ), # rdd blue for edm2Paper#
+		  rgb ( 222,147,142 ,maxColorValue = 255 ), #edm2 red#
+		  rgb ( 142,120,176  ,maxColorValue = 255 )# ibm2paper ibm2 purple#
+		),#
+	lty = "dashed",#
+	cex = 2,#
+	cat.cex = 2,#
+#	cat.col = c("orange", "red", "green", "blue")#
+	);
+dev.off()
+?draw.quad.venn
+venn.plot <- draw.quad.venn(#
+	area1 = 10331, #
+	area2 = 3991, #
+	area3 = 6666,#
+	area4 = 3272,#
+	n12 = 297,#
+	n13 = 6017,#
+	n14 = 2652,#
+	n23 = 287,#
+	n24 = 341,#
+	n34 = 2365,#
+#
+	n123 = 165,#
+	n124 = 127,#
+	n134 = 2198 + 85,#
+	n234 = 41+85,#
+	n1234 = 85,#
+	#category = c("First", "Second", "Third", "Fourth"),#
+	category = c("ibm1", "rdd", "edm2", "ibm2"),#
+#
+#	fill = c("orange", "red", "green", "blue"),#
+	fill = c( rgb (177,199,112  ,maxColorValue = 255 ), # ibm1 green for ibm2paper#
+		  rgb ( 127,184,207 ,maxColorValue = 255 ), # rdd blue for edm2Paper#
+		  rgb ( 222,147,142 ,maxColorValue = 255 ), #edm2 red#
+		  rgb ( 142,120,176  ,maxColorValue = 255 )# ibm2paper ibm2 purple#
+		),#
+	lty = "dashed",#
+	cex = 2,#
+	cat.cex = 2,#
+#	cat.col = c("orange", "red", "green", "blue")#
+	);
+q("no")
+3218 + 1835 + 15262214*2 + 1042182 + 1112708
+12482529 + 11440362
+q("no")
+941+1035+379+151+5410+344+95+1366+81+1781+4181+12945+213+74+104+131+129+1829
+75544 / 4.092
+q("no")
+good
+goog
+layout.show()
+layout(matrix(c(1, 2)), heights=c(2, 1))
+layout.show()
+dev.off()
+layout.show()
+dev.off()
+layout(matrix(c(1, 2)), heights=c(2, 1))
+layout.show()
+par(mar = c(6, 6 , 2, 1))#
+layout(matrix(c(1, 2)), heights=c(2, 1))
+dev.off()
+par(mar = c(6, 6 , 2, 1))#
+layout(matrix(c(1, 2)), heights=c(2, 1))
+layout.show()
+?plot
+plot(table(rpois(100,5)), type = "h", col = "red", lwd=10,#
+     main="rpois(100,lambda=5)")
+plot(sin, -pi, 2*pi)
+dev.off()
+par(mar = c(6, 6 , 2, 1))#
+layout(matrix(c(1, 2)), heights=c(5, 1))#
+plot(table(rpois(100,5)), type = "h", col = "red", lwd=10,#
+main="rpois(100,lambda=5)")#
+#
+plot(sin, -pi, 2*pi)#
+par(new=T)#
+#
+plot(cos, -pi, 2*pi)#
+axis(4, col='red')
+dev.off()
+par(mar = rep(0.3,4));#
+layout(matrix(c(1, 2)), heights=c(5, 1))#
+plot(table(rpois(100,5)), type = "h", col = "red", lwd=10,#
+main="rpois(100,lambda=5)")#
+#
+plot(sin, -pi, 2*pi)#
+par(new=T)#
+#
+plot(cos, -pi, 2*pi)#
+axis(4, col='red')
+?plot
+sin
+par(mar = rep(1,4));#
+layout(matrix(c(1, 2)), heights=c(5, 1))#
+plot(table(rpois(100,5)), type = "h", col = "red", lwd=10,#
+main="rpois(100,lambda=5)")#
+#
+plot(sin, -pi, 2*pi)#
+par(new=T)#
+#
+plot(cos, -pi/10, 2*pi)#
+axis(4, col='red')
+par(mar = rep(1,4));#
+layout(matrix(c(1, 2)), heights=c(5, 1))#
+plot(table(rpois(100,5)), type = "h", col = "red", lwd=10,#
+main="rpois(100,lambda=5)")#
+#
+plot(sin, -pi, 2*pi)#
+par(new=T)#
+#
+plot(x <- sort(rnorm(47)), type = "s", main = "plot(x, type = \"s\")")#
+axis(4, col='red')
+layout(matrix(c(1, 2)), heights=c(5, 1))#
+plot(table(rpois(100,5)), type = "h", col = "red", lwd=10,#
+main="rpois(100,lambda=5)")#
+#
+plot(sin, -pi, 2*pi)#
+par(new=T)#
+#
+plot(x <- sort(rnorm(47)), type = "s")#
+axis(4, col='red', ylim = c(0,5) )
+plot(table(rpois(100,5)), type = "h", col = "red", lwd=10,#
+     main="rpois(100,lambda=5)")
+layout(matrix(c(1, 2)), heights=c(5, 1))#
+plot(table(rpois(100,5)), type = "h", col = "red", lwd=10,#
+main="rpois(100,lambda=5)")#
+#
+#plot(sin, -pi, 2*pi)#
+plot(table(rpois(100,5)), type = "h", col = "blue", lwd=10)#
+par(new=T)#
+#
+plot(x <- sort(rnorm(47)), type = "s")#
+axis(4, col='red', ylim = c(0,5) )
+layout(matrix(c(1, 2)), heights=c(3, 1))#
+plot(table(rpois(100,5)), type = "h", col = "red", lwd=10,#
+main="rpois(100,lambda=5)")#
+#
+#plot(sin, -pi, 2*pi)#
+plot(table(rpois(100,5)), type = "h", col = "blue", lwd=10)#
+par(new=T)#
+#
+plot(x <- sort(rnorm(47)), type = "s")#
+axis(4, col='red', ylim = c(0,5) )
+?par
+layout(matrix(c(1, 2)), heights=c(3, 1))#
+#
+par(mar = c(0, 2, 3, 2) )#
+#
+plot(table(rpois(100,5)), type = "h", col = "red", lwd=10,#
+main="rpois(100,lambda=5)")#
+#
+#plot(sin, -pi, 2*pi)#
+#
+par(mar = c(2, 2, 0, 2) )#
+#
+plot(table(rpois(100,5)), type = "h", col = "blue", lwd=10)#
+par(new=T)#
+#
+plot(x <- sort(rnorm(47)), type = "s")#
+axis(4, col='red', ylim = c(0,5) )
+plot(x <- sort(rnorm(47)), type = "s")
+layout(matrix(c(1, 2)), heights=c(3, 1))#
+#
+par(mar = c(0, 2, 3, 2) )#
+#
+plot(table(rpois(100,5)), type = "h", col = "red", lwd=10,#
+main="rpois(100,lambda=5)")#
+#
+#plot(sin, -pi, 2*pi)#
+#
+par(mar = c(2, 2, 0, 2) )#
+#
+plot(table(rpois(100,5)), type = "h", col = "blue", lwd=10)#
+par(new=T)#
+#
+plot(x <- sort(rnorm(47)), type = "s")#
+axis(4, col='red', ylim = c(0,5) )
+layout(matrix(c(1, 2)), heights=c(3, 1))#
+#
+par(mar = c(0, 2, 3, 2) )#
+#
+plot(table(rpois(100,5)), type = "h", col = "red", lwd=10,)
+par(mar = c(2, 2, 0, 2) )#
+#
+plot(table(rpois(100,5)), type = "h", col = "blue", lwd=10)#
+par(new=T)
+plot(x <- sort(rnorm(47)), type = "s", yaxt = "n")
+layout(matrix(c(1, 2)), heights=c(3, 1))#
+#
+par(mar = c(0, 2, 3, 2) )#
+#
+plot(table(rpois(100,5)), type = "h", col = "red", lwd=10,)#
+#
+#plot(sin, -pi, 2*pi)#
+#
+par(mar = c(2, 2, 0, 2) )#
+#
+plot(table(rpois(100,5)), type = "h", col = "blue", lwd=10, las =2)#
+par(new=T)#
+#
+plot(x <- sort(rnorm(47)), type = "s", yaxt = "n", xaxt = "n")
+dev.off()
+layout(matrix(c(1, 2)), heights=c(3, 1))#
+#
+par(mar = c(0, 2, 3, 2) )#
+#
+plot(table(rpois(100,5)), type = "h", col = "red", lwd=10, xaxt="n")#
+#
+#plot(sin, -pi, 2*pi)#
+#
+par(mar = c(2, 2, 0, 2) )#
+#
+plot(table(rpois(100,5)), type = "h", col = "blue", lwd=10, las =2)#
+par(new=T)
+plot(x <- sort(rnorm(47)), type = "s", yaxt = "n", xaxt = "n")
+axis(4, col='red', ylim = c(0,5) )
+dev.off()
+legend()
+?legend()
+?legend
+leg.txt <- c("Setosa     Petals", "Setosa     Sepals",#
+             "Versicolor Petals", "Versicolor Sepals")#
+y.leg <- c(4.5, 3, 2.1, 1.4, .7)#
+cexv  <- c(1.2, 1, 4/5, 2/3, 1/2)#
+matplot(c(1,8), c(0,4.5), type = "n", xlab = "Length", ylab = "Width",#
+        main = "Petal and Sepal Dimensions in Iris Blossoms")#
+for (i in seq(cexv)) {#
+  text  (1, y.leg[i]-.1, paste("cex=",formatC(cexv[i])), cex=.8, adj = 0)#
+  legend(3, y.leg[i], leg.txt, pch = "sSvV", col = c(1, 3), cex = cexv[i])#
+}
+legend(3, y.leg[i], leg.txt, pch = "sSvV", col = c(1, 3), cex = cexv[i])
+plot.new()
+legend(3, y.leg[i], leg.txt, pch = "sSvV", col = c(1, 3), cex = cexv[i])
+i
+plot.new()
+legend(3, y.leg[i], leg.txt, pch = "sSvV", col = c(1, 3), cex = cexv[i])
+q("no")
+60 -12 + 4.26 + (9.99 + 1.35) * 3
+86.28/4
+21.57 + 20 + 0.4
+21.57 + 15 + 4
+21.57 + 15 + 4.4
+41.97 + 21.57 + 40.57 +  40.97
+60 -12 + 4.26 + (9.99 + 1.25) * 3
+85.98 / 4
+21.495 + 20 + 0.4
+21.495 + 15 + 4
+21.495 + 15 + 4.4
+41.895+21.495+40.495+ 40.895
+85.98 / 4
+q("no")
+birth = "1986-12-11"
+birth
+type(birth)
+class(birth)
+b = as.Date(bir)
+b = as.Date(birth)
+b
+class(b)
+t = as.Date("2013-1-5")
+t-b
+l = as.Date("2009-07-27")
+t-l
+q("no")
+73598 + 22284 + 13848835*2 + 1540893 + 1213418
+68767 + 20753 + 12213923 * 2 + 2652376 + 1222219
+q("no")
+2*10^5 / 3600
+q("no")
+?plot
+layout(matrix(c(1, 2)), heights=c(3, 1))#
+#
+par(mar = c(0, 2, 3, 2) )#
+#
+plot(table(rpois(100,5)), type = "h", col = "red", lwd=10, xaxt="n")#
+#
+#plot(sin, -pi, 2*pi)#
+#
+par(mar = c(2, 2, 0, 2) )#
+#
+plot(table(rpois(100,5)), type = "h", col = "blue", lwd=10, las =2)#
+par(new=T)#
+#
+plot(x <- sort(rnorm(47)), type = "s", yaxt = "n", xaxt = "n")#
+axis(4, col='red', ylim = c(0,5) )
+?read.delim
+setwd("/Users/tang58/Kai_BS/for_publish/R_script")
+png_pre = "temp"
+file = "JKZ134_ros1-4_vs_JKZ131_Col0_hyper_P0.05_reduced_boundary_All_dep4_WinSize200_sliding50_gap100_iniCut2_repCut5_ROS1Paper_detail_EckerPaper_annotated_TAIR10_len100_wCfold2_fCdiff10.txt"
+chr_lable = "chr1"
+width_val = 6# 3.8; #
+#height_val = 6;#
+height_val = 4#
+units_val = "in"; res_val = 100; pointsize_val =8;#
+#
+#las_val = 1; # axis labels horizontal or vertical#
+#
+#print("modify file name\n")#
+# file_name = paste("ibm2Paper_all_Gene", "_w", width_val, "_h", height_val, "_res", res_val, "_pt", pointsize_val, ".png", sep="")#
+file_name = paste(png_pre , "_w", width_val, "_h", height_val, "_res", res_val, "_pt", pointsize_val, ".png", sep="")#
+#
+gene_distribution_file = "/Users/tang58/Kai_BS/for_publish/9_feature_meth_level_db/TAIR10_all_Gene_number_WinSize100000_sliding100000.txt";#
+TE_distribution_file = "/Users/tang58/Kai_BS/for_publish/9_feature_meth_level_db/TAIR10_all_TE_number_WinSize100000_sliding100000.txt";#
+#
+png(file_name, width = width_val, height = height_val, units = units_val , res = res_val, pointsize = pointsize_val );#
+#
+#par(mar=c(1,3,1,1)+0.1)#
+#
+par(oma = c(5, 5, 1, 0) ) #down left up rigth#
+#par(mar= rep(2, 4))#
+data_raw = read.delim(file, head=T, sep ="\t")#
+#
+data_chr = data_raw[ data_raw[,1] ==  chr_lable  ,]#
+#
+data_x = data_chr[, 1:3];#
+data_x[,4] = data_x[,3] - data_x[,2] + 1;#
+#
+gene_raw =  read.table( gene_distribution_file , head=T, sep ="\t")#
+TE_raw	 =  read.table( TE_distribution_file , head=T, sep ="\t")#
+#
+gene_chr = gene_raw [ gene_raw[,1] == chr_lable , ]#
+TE_chr	 = TE_raw [ TE_raw[,1] == chr_lable , ]#
+#
+lwd_line = 2#
+#
+layout(matrix(c(1, 2)), heights=c(3, 1)) # split screen to 2 parts#
+#
+par(xpd=F)#
+#1par(mar = c(2, 2, 0, 2) )#
+#
+par(mar = c(0, 2, 3, 2) )#
+plot(  data_chr[,2], data_chr[,4], type = "p", pch= ".",  xaxt = "n");#
+#
+par(mar = c(2, 2, 0, 2) )#
+#
+plot( TE_chr[,2], TE_chr[,4] , col = "blue", lwd= 0.8 , las =2, type ="l" )#
+par(new=T)#
+plot( gene_chr[,2], gene_chr[,4] , yaxt = "n", xaxt = "n", type ="l", col = "red")#
+axis(4, col='red'  )
+dev.off()
+width_val = 6# 3.8; #
+#height_val = 6;#
+height_val = 4#
+units_val = "in"; res_val = 100; pointsize_val =8;#
+#
+#las_val = 1; # axis labels horizontal or vertical#
+#
+#print("modify file name\n")#
+# file_name = paste("ibm2Paper_all_Gene", "_w", width_val, "_h", height_val, "_res", res_val, "_pt", pointsize_val, ".png", sep="")#
+file_name = paste(png_pre , "_w", width_val, "_h", height_val, "_res", res_val, "_pt", pointsize_val, ".png", sep="")#
+#
+gene_distribution_file = "/Users/tang58/Kai_BS/for_publish/9_feature_meth_level_db/TAIR10_all_Gene_number_WinSize100000_sliding100000.txt";#
+TE_distribution_file = "/Users/tang58/Kai_BS/for_publish/9_feature_meth_level_db/TAIR10_all_TE_number_WinSize100000_sliding100000.txt";#
+#
+png(file_name, width = width_val, height = height_val, units = units_val , res = res_val, pointsize = pointsize_val );#
+#
+#par(mar=c(1,3,1,1)+0.1)#
+#
+par(oma = c(5, 5, 1, 0) ) #down left up rigth#
+#par(mar= rep(2, 4))#
+data_raw = read.delim(file, head=T, sep ="\t")#
+#
+data_chr = data_raw[ data_raw[,1] ==  chr_lable  ,]#
+#
+data_x = data_chr[, 1:3];#
+data_x[,4] = data_x[,3] - data_x[,2] + 1;#
+#
+gene_raw =  read.table( gene_distribution_file , head=T, sep ="\t")#
+TE_raw	 =  read.table( TE_distribution_file , head=T, sep ="\t")#
+#
+gene_chr = gene_raw [ gene_raw[,1] == chr_lable , ]#
+TE_chr	 = TE_raw [ TE_raw[,1] == chr_lable , ]#
+#
+lwd_line = 2#
+#
+layout(matrix(c(1, 2)), heights=c(3, 1)) # split screen to 2 parts#
+#
+par(xpd=F)#
+#1par(mar = c(2, 2, 0, 2) )#
+#
+par(mar = c(0, 2, 3, 2) )#
+plot(  data_chr[,2], data_chr[,4], type = "p", pch= ".",  xaxt = "n");#
+#
+par(mar = c(2, 2, 0, 2) )#
+#
+plot( TE_chr[,2], TE_chr[,4] , col = "blue", lwd= 0.8 , las =2, type ="l" )#
+par(new=T)#
+plot( gene_chr[,2], gene_chr[,4] , yaxt = "n", xaxt = "n", type ="l", col = "red")#
+axis(4, col='red'  )
+width_val = 6# 3.8; #
+#height_val = 6;#
+height_val = 4#
+units_val = "in"; res_val = 100; pointsize_val =8;#
+#
+#las_val = 1; # axis labels horizontal or vertical#
+#
+#print("modify file name\n")#
+# file_name = paste("ibm2Paper_all_Gene", "_w", width_val, "_h", height_val, "_res", res_val, "_pt", pointsize_val, ".png", sep="")#
+#file_name = paste(png_pre , "_w", width_val, "_h", height_val, "_res", res_val, "_pt", pointsize_val, ".png", sep="")#
+#
+gene_distribution_file = "/Users/tang58/Kai_BS/for_publish/9_feature_meth_level_db/TAIR10_all_Gene_number_WinSize100000_sliding100000.txt";#
+TE_distribution_file = "/Users/tang58/Kai_BS/for_publish/9_feature_meth_level_db/TAIR10_all_TE_number_WinSize100000_sliding100000.txt";#
+#
+png(file_name, width = width_val, height = height_val, units = units_val , res = res_val, pointsize = pointsize_val );#
+#
+#par(mar=c(1,3,1,1)+0.1)#
+#
+par(oma = c(5, 5, 1, 0) ) #down left up rigth#
+#par(mar= rep(2, 4))#
+data_raw = read.delim(file, head=T, sep ="\t")#
+#
+data_chr = data_raw[ data_raw[,1] ==  chr_lable  ,]#
+#
+data_x = data_chr[, 1:3];#
+data_x[,4] = data_x[,3] - data_x[,2] + 1;#
+#
+gene_raw =  read.table( gene_distribution_file , head=T, sep ="\t")#
+TE_raw	 =  read.table( TE_distribution_file , head=T, sep ="\t")#
+#
+gene_chr = gene_raw [ gene_raw[,1] == chr_lable , ]#
+TE_chr	 = TE_raw [ TE_raw[,1] == chr_lable , ]#
+#
+lwd_line = 2#
+#
+layout(matrix(c(1, 2)), heights=c(3, 1)) # split screen to 2 parts#
+#
+par(xpd=F)#
+#1par(mar = c(2, 2, 0, 2) )#
+#
+par(mar = c(0, 2, 3, 2) )#
+plot(  data_chr[,2], data_chr[,4], type = "p", pch= ".",  xaxt = "n");#
+#
+par(mar = c(2, 2, 0, 2) )#
+#
+plot( TE_chr[,2], TE_chr[,4] , col = "blue", lwd= 0.8 , las =2, type ="l" )#
+par(new=T)#
+plot( gene_chr[,2], gene_chr[,4] , yaxt = "n", xaxt = "n", type ="l", col = "red")#
+axis(4, col='red'  )
+dev.off()
+dev.off()
+dev.off()
+width_val = 6# 3.8; #
+#height_val = 6;#
+height_val = 4#
+units_val = "in"; res_val = 100; pointsize_val =8;#
+#
+#las_val = 1; # axis labels horizontal or vertical#
+#
+#print("modify file name\n")#
+# file_name = paste("ibm2Paper_all_Gene", "_w", width_val, "_h", height_val, "_res", res_val, "_pt", pointsize_val, ".png", sep="")#
+#file_name = paste(png_pre , "_w", width_val, "_h", height_val, "_res", res_val, "_pt", pointsize_val, ".png", sep="")#
+#
+gene_distribution_file = "/Users/tang58/Kai_BS/for_publish/9_feature_meth_level_db/TAIR10_all_Gene_number_WinSize100000_sliding100000.txt";#
+TE_distribution_file = "/Users/tang58/Kai_BS/for_publish/9_feature_meth_level_db/TAIR10_all_TE_number_WinSize100000_sliding100000.txt";#
+#
+png(file_name, width = width_val, height = height_val, units = units_val , res = res_val, pointsize = pointsize_val );#
+#
+#par(mar=c(1,3,1,1)+0.1)#
+#
+par(oma = c(5, 5, 1, 0) ) #down left up rigth#
+#par(mar= rep(2, 4))#
+data_raw = read.delim(file, head=T, sep ="\t")#
+#
+data_chr = data_raw[ data_raw[,1] ==  chr_lable  ,]#
+#
+data_x = data_chr[, 1:3];#
+data_x[,4] = data_x[,3] - data_x[,2] + 1;#
+#
+gene_raw =  read.table( gene_distribution_file , head=T, sep ="\t")#
+TE_raw	 =  read.table( TE_distribution_file , head=T, sep ="\t")#
+#
+gene_chr = gene_raw [ gene_raw[,1] == chr_lable , ]#
+TE_chr	 = TE_raw [ TE_raw[,1] == chr_lable , ]#
+#
+lwd_line = 2#
+#
+layout(matrix(c(1, 2)), heights=c(3, 1)) # split screen to 2 parts#
+#
+par(xpd=F)#
+#1par(mar = c(2, 2, 0, 2) )#
+#
+par(mar = c(0, 2, 3, 2) )#
+plot(  data_chr[,2], data_chr[,4], type = "p", pch= ".",  xaxt = "n");#
+#
+par(mar = c(2, 2, 0, 2) )#
+#
+plot( TE_chr[,2], TE_chr[,4] , col = "blue", lwd= 0.8 , las =2, type ="l" )#
+par(new=T)#
+plot( gene_chr[,2], gene_chr[,4] , yaxt = "n", xaxt = "n", type ="l", col = "red")#
+axis(4, col='red'  )
+dev.off()
+dev.off()
+width_val = 6# 3.8; #
+#height_val = 6;#
+height_val = 4#
+units_val = "in"; res_val = 100; pointsize_val =8;#
+#
+#las_val = 1; # axis labels horizontal or vertical#
+#
+#print("modify file name\n")#
+# file_name = paste("ibm2Paper_all_Gene", "_w", width_val, "_h", height_val, "_res", res_val, "_pt", pointsize_val, ".png", sep="")#
+file_name = paste(png_pre , "_w", width_val, "_h", height_val, "_res", res_val, "_pt", pointsize_val, ".png", sep="")#
+#
+gene_distribution_file = "/Users/tang58/Kai_BS/for_publish/9_feature_meth_level_db/TAIR10_all_Gene_number_WinSize100000_sliding100000.txt";#
+TE_distribution_file = "/Users/tang58/Kai_BS/for_publish/9_feature_meth_level_db/TAIR10_all_TE_number_WinSize100000_sliding100000.txt";#
+#
+#png(file_name, width = width_val, height = height_val, units = units_val , res = res_val, pointsize = pointsize_val );#
+#
+#par(mar=c(1,3,1,1)+0.1)#
+#
+par(oma = c(5, 5, 1, 0) ) #down left up rigth#
+#par(mar= rep(2, 4))#
+data_raw = read.delim(file, head=T, sep ="\t")#
+#
+data_chr = data_raw[ data_raw[,1] ==  chr_lable  ,]#
+#
+data_x = data_chr[, 1:3];#
+data_x[,4] = data_x[,3] - data_x[,2] + 1;#
+#
+gene_raw =  read.table( gene_distribution_file , head=T, sep ="\t")#
+TE_raw	 =  read.table( TE_distribution_file , head=T, sep ="\t")#
+#
+gene_chr = gene_raw [ gene_raw[,1] == chr_lable , ]#
+TE_chr	 = TE_raw [ TE_raw[,1] == chr_lable , ]#
+#
+lwd_line = 2#
+#
+layout(matrix(c(1, 2)), heights=c(3, 1)) # split screen to 2 parts#
+#
+par(xpd=F)#
+#1par(mar = c(2, 2, 0, 2) )#
+#
+par(mar = c(0, 2, 3, 2) )#
+plot(  data_chr[,2], data_chr[,4], type = "p", pch= ".",  xaxt = "n");#
+#
+par(mar = c(2, 2, 0, 2) )#
+#
+plot( TE_chr[,2], TE_chr[,4] , col = "blue", lwd= 0.8 , las =2, type ="l" )#
+par(new=T)#
+plot( gene_chr[,2], gene_chr[,4] , yaxt = "n", xaxt = "n", type ="l", col = "red")#
+axis(4, col='red'  )
+ls()
+head(data_x)
+?plot
+q("no")

@@ -1,0 +1,1 @@
+/Users/tang58/scripts_all/R_scripts/draw_loci_distribution_in_5_chr/draw_distribution_in_chr_use_v0.1_coordinate_format_single_file.R

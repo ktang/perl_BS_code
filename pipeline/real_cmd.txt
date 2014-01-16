@@ -1,0 +1,22 @@
+/Volumes/My_Book/35S_SUC2_background_BS_Seq_10:24:23_N=560$
+
+ mkdir cytosine_coverage
+
+
+/Volumes/My_Book/35S_SUC2_background_BS_Seq_10:11:40_N=558$
+ perl ~/Kai_BS/myown/cytosines_coverage/batch_cal_cytosines_coverage.pl 
+###################################################################################
+/Volumes/My_Book/35S_SUC2_background_BS_Seq_10:24:57_N=561$ 
+
+time perl ~/Kai_BS/myown/cytosines_coverage/batch_cal_cytosines_coverage.pl acgt_count_ln/ cytosine_coverage/
+~7min/isMeth
+
+
+###################################################################################
+/Volumes/My_Book/35S_SUC2_background_BS_Seq_10:39:40_N=564$ 
+time perl ~/Kai_BS/myown/cytosines_coverage/summary_report_Kaust_chrC_v0.1.pl cytosine_coverage/ meth_summary.txt
+
+###################################################################################
+~/Kai_BS/myown/call_methylation_CG_CHG_CHH/batch_call_methylation.pl 
+/Volumes/My_Book/35S_SUC2_background_BS_Seq_10:49:44_N=569$
+ time perl ~/Kai_BS/myown/call_methylation_CG_CHG_CHH/batch_call_methylation.pl meth_summary.txt acgt_count_ln/ isMeth/

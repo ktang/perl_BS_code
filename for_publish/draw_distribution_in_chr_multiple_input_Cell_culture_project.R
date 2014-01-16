@@ -1,0 +1,1 @@
+/Users/tang58/misc/Zhu_Xiaohong/Mar27_filter_MAPQ20/mpileup/513loci_downstream/split/draw_distribution_in_chr_multiple_input_Cell_culture_project.R

@@ -1,0 +1,1 @@
+/Users/tang58/misc/Huiming_Zhang/13_Feb15_rrp6L1_smallRNA/list_exp50_fold2_Mar5_2013/Apr2_2013_meth_level_heatmap_for_rrp6L1_exp50_fold2_24bp_list/R_heatmap_for_meth_level_in_sRNA_region_command_input.r

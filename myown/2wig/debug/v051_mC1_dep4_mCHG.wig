@@ -1,0 +1,3 @@
+track	type=wiggle_0	name="v051"	description="v051 CHG methlation"	viewLimits=-1.0:1.0	color=100,149,237
+variableStep	chrom=chr1
+123	0.778

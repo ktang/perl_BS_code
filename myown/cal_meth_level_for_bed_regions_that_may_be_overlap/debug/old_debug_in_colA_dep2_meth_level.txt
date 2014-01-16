@@ -1,0 +1,6 @@
+chr	start	end	informative_C_num	CG_num	CHG_num	CHH_num	CG	CG_per	CHG	CHG_per	CHH	CHH_per	all_C_percentage
+chr1	100	105	2	0	0	2	0/0=	NA	0/0=	NA	0/14=	0.0000	0.0000
+chr1	101	110	5	1	1	3	3/11=	27.2727	2/11=	18.1818	1/25=	4.0000	12.7660
+chr1	310	315	2	1	0	1	22/39=	56.4103	0/0=	NA	3/40=	7.5000	31.6456
+chr1	404	418	3	1	1	1	15/30=	50.0000	2/28=	7.1429	9/29=	31.0345	29.8851
+chr2	1	10	0	0	0	0	0/0=	NA	0/0=	NA	0/0=	NA	NA

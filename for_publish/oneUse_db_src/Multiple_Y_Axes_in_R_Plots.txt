@@ -1,0 +1,35 @@
+plot(x=goog2$date, y=goog2$close, ylim=c(0,1.1*max(goog2$close)),
+02
++   col='blue', type='l',
+03
++   main='Google (GOOG) vs Yahoo (YHOO) stock close', xlab='date', ylab='close ($)',
+04
++   xaxt='n', yaxt='n', lwd=0.75)
+05
+>
+06
+> points(x=goog2$date, y=goog2$close30, col='blue', type='l', lwd=2.5)
+07
+> axis(2, pretty(c(0, 1.1*max(goog2$close))), col='blue')
+08
+>
+09
+> par(new=T)
+10
+> plot(x=yahoo2$date, y=yahoo2$close, ylim=c(0,1.1*max(yahoo2$close)),
+11
++   col='red', type='l', lwd=0.75,
+12
++   xaxt='n', axes=F, ylab='')
+13
+>
+14
+> points(x=yahoo2$date, y=yahoo2$close30, col='red', type='l', lwd=2.5)
+15
+>
+16
+> axis(4, pretty(c(0, 1.1*max(yahoo2$close))), col='red')
+17
+>
+18
+</code>

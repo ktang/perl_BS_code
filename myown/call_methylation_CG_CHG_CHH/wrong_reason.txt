@@ -1,0 +1,211 @@
+
+cal_accumulated_number(\@total_meth_CG , \@meth_level_CG, \@accu_meth_CG);
+cal_accumulated_number(\@total_meth_CG , \@meth_level_CHG, \@accu_meth_CHG);
+cal_accumulated_number(\@total_meth_CHH , \@meth_level_CHH, \@accu_meth_CHH);
+
+CG->CHG
+
+
+/Volumes/My_Book/20120427_ShangHai_data/nodupl_July30/colA/call_debug_09:48:38_N=553$ time perl ~/Kai_BS/myown/call_methylation_CG_CHG_CHH/call_methylation_CG_CHG_CHH_separated_v0.2_chrC_for_modify.pl ../ colA_nodupl . 200 0.0101778518333011
+input files:
+../colA_nodupl_forw.txt
+../colA_nodupl_rev.txt
+
+reading ../colA_nodupl_forw.txt..	Done
+reading ../colA_nodupl_rev.txt..	Done
+
+File: colA_nodupl, Conversion Error: 0.0101778518333011
+Max depth: 200
+calculate accumulated number..	Done
+
+depth = 2 : 180871 
+0: 118879	1: 19207	2: 42785
+accum:0: 118879	1: 138086	2: 180871
+
+calculate accumulated number..	Done
+
+depth = 2 : 185922 
+0: 152399	1: 22770	2: 10753
+accum:0: 152399	1: 175169	2: 185922
+
+calculate accumulated number..	Done
+
+depth = 2 : 1549205 
+0: 1411026	1: 123508	2: 14671
+accum:0: 1411026	1: 1534534	2: 1549205
+
+find cutoff at each depth level..	start..i = 1, 2
+
+in body : j = 1
+
+left:	2395.23666166979 = 0.0201485263307211 * 118879; 
+
+right:	619.92 = 0.01 * 61992
+
+in body : j = 2
+
+left:	14.3041448012429 = 0.00010358866794058 * 138086; 
+
+right:	427.85 = 0.01 * 42785
+
+assign: 2
+
+last: j = 2
+
+Done
+find cutoff at each depth level..	start..i = 1, 2
+
+in body : j = 1
+
+left:	3070.61526427556 = 0.0201485263307211 * 152399; 
+
+right:	335.23 = 0.01 * 33523
+
+in body : j = 2
+
+left:	18.1455233744834 = 0.00010358866794058 * 175169; 
+
+right:	107.53 = 0.01 * 10753
+
+assign: 2
+
+last: j = 2
+
+Done
+find cutoff at each depth level..	start..i = 1, 2
+
+in body : j = 1
+
+left:	28430.094514332 = 0.0201485263307211 * 1411026; 
+
+right:	1381.79 = 0.01 * 138179
+
+in body : j = 2
+
+left:	158.960332969529 = 0.00010358866794058 * 1534534; 
+
+right:	146.71 = 0.01 * 14671
+
+last: j = 3
+
+assign here as last: 3
+
+Done
+reading ../colA_nodupl_forw.txt..	Done
+reading ../colA_nodupl_rev.txt..	Done
+
+Total mC position in colA_nodupl
+CG	1568721
+CHG	733282
+CHH	673650
+Total	2975653
+
+real	11m56.973s
+user	10m55.935s
+sys	0m7.425s
+
+Total mC position in col0B_nodupl
+CG	1518275
+CHG	682693
+CHH	530185
+Total	2731153
+
+
+
+/Volumes/My_Book/20120702_SH_extra_BS_Seq/nodupl_09:50:00_N=511$ time perl ~/Kai_BS/myown/call_methylation_CG_CHG_CHH/call_methylation_CG_CHG_CHH_separated_v0.2_chrC_for_modify.pl nodupl_acgt_count_results/ col0B_nodupl isMeth2/ 200 0.00879151766339267
+input files:
+nodupl_acgt_count_results/col0B_nodupl_forw.txt
+nodupl_acgt_count_results/col0B_nodupl_rev.txt
+
+reading nodupl_acgt_count_results/col0B_nodupl_forw.txt..	Done
+reading nodupl_acgt_count_results/col0B_nodupl_rev.txt..	Done
+
+File: col0B_nodupl, Conversion Error: 0.00879151766339267
+Max depth: 200
+calculate accumulated number..	Done
+
+depth = 2 : 270715 
+0: 175875	1: 28004	2: 66836
+accum:0: 175875	1: 203879	2: 270715
+
+calculate accumulated number..	Done
+
+depth = 2 : 278653 
+0: 229832	1: 32616	2: 16205
+accum:0: 229832	1: 262448	2: 278653
+
+calculate accumulated number..	Done
+
+depth = 2 : 2155347 
+0: 1987406	1: 149527	2: 18414
+accum:0: 1987406	1: 2136933	2: 2155347
+
+find cutoff at each depth level..	start..i = 1, 2
+
+in body : j = 1
+
+left:	3065.22930523942 = 0.0174284537611339 * 175875; 
+
+right:	948.4 = 0.01 * 94840
+
+in body : j = 2
+
+left:	15.7579675117211 = 7.72907828257008e-05 * 203879; 
+
+right:	668.36 = 0.01 * 66836
+
+assign: 2
+
+last: j = 2
+
+Done
+find cutoff at each depth level..	start..i = 1, 2
+
+in body : j = 1
+
+left:	4005.61638482892 = 0.0174284537611339 * 229832; 
+
+right:	488.21 = 0.01 * 48821
+
+in body : j = 2
+
+left:	20.2848113710395 = 7.72907828257008e-05 * 262448; 
+
+right:	162.05 = 0.01 * 16205
+
+assign: 2
+
+last: j = 2
+
+Done
+find cutoff at each depth level..	start..i = 1, 2
+
+in body : j = 1
+
+left:	34637.4135756001 = 0.0174284537611339 * 1987406; 
+
+right:	1679.41 = 0.01 * 167941
+
+in body : j = 2
+
+left:	165.165224416073 = 7.72907828257008e-05 * 2136933; 
+
+right:	184.14 = 0.01 * 18414
+
+assign: 2
+
+last: j = 2
+
+Done
+reading nodupl_acgt_count_results/col0B_nodupl_forw.txt..	Done
+reading nodupl_acgt_count_results/col0B_nodupl_rev.txt..	Done
+
+Total mC position in col0B_nodupl
+CG	1518275
+CHG	682693
+CHH	530185
+Total	2731153
+
+real	11m52.772s
+user	10m54.960s
+sys	0m7.585s

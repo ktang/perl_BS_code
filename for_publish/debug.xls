@@ -1,0 +1,3 @@
+sample	weighted_CG_level	weighted_CHG_level	weighted_CHH_level	weighted_C_level	weighted_CG_div	weighted_CHG_div	weighted_CHH_div	weighted_C_div	frac_CG_level	frac_CHG_level	frac_CHH_level	frac_C_level	mCG_num	mCHG_num	mCHH_num	mC_num	CG_num	CHG_num	CHH_num	C_num	sum_CG_level	sum_CHG_level	sum_CHH_level	sum_C_level	mean_CG_level	mean_CHG_level	mean_CHH_level	mean_C_level
+colA	85.366	61.111	2.825	24.409	35/41=	22/36=	5/177=	62/254=	100.000	100.000	7.692	36.842	3	3	1	7	3	3	13	19	2.638889	1.837413	0.625	5.101302	87.963	61.247	4.808	26.849
+edm2_sk460A	12.464	3.059	0.658	2.555	216/1733=	59/1929=	63/9569=	338/13231=	17.949	7.801	2.564	5.105	21	11	19	51	117	141	741	999	15.693383	6.293742	7.600428	29.587553	13.413	4.464	1.026	2.962

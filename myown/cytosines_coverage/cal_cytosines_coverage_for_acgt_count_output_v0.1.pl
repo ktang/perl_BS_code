@@ -1,0 +1,366 @@
+#!/usr/bin/perl -w
+# given acgt-count output, calculate the depth of coverage at each cytosine position
+# and percentage of total cytosines that was covered by at least one or two reads.
+
+#chr1    33      33      CHG:13  0.153846        -
+#chr1    79      79      CHH:27  0.148148        -
+# 0		  1		 2			3		4			 5
+
+#v0.1 output depth file
+
+use strict;
+use File::Spec;
+
+#my %chr_len = ("chr1"=>30427671, "chr2"=>19698289, "chr3"=>23459830, "chr4"=>18585056, "chr5"=>26975502, "chrM"=>366924, "chrC"=>154478, "pUC19"=>2686);
+
+my $debug = 0;
+my $constant = 2000000;
+if ($debug) {$constant = 300 ;}
+
+if($debug){
+	print  STDERR "debug = $debug\n\n";
+}
+
+my $usage = "$0 \n<indir> <pre> <outdir>\n\n";
+die $usage unless (@ARGV == 3);
+
+my $indir = shift or die "indir";
+my $pre = shift or die "pre";
+my $outdir = shift or die "dir";
+
+die "wrong indir" unless (-d $indir);
+die "wrong outdir" unless (-d $outdir);
+
+my $in_forw = File::Spec->catfile($indir, $pre . "_forw.txt");
+my $in_rev  = File::Spec->catfile($indir, $pre . "_rev.txt");
+
+#if($debug){
+	print  STDERR "input files:\n";
+	print  STDERR join("\n", ($in_forw, $in_rev)), "\n\n";
+#}
+die "wrong input" unless (-e $in_forw and -e $in_rev );
+
+my $output = File::Spec->catfile($outdir,$pre. "_cytosines_coverage_info.txt");
+die "$output exists" if (-e $output);
+print STDERR "output:\n$output\n";
+
+my $depth_file = File::Spec->catfile($outdir,$pre. "_depth_distribution.txt" );
+die "depth_file exists" if (-e $depth_file);
+print STDERR $depth_file, "\n\n";
+
+if($debug){
+	print STDERR "\nOK\n\n";
+	exit;
+}
+
+#die "die debug\n\n" if ($debug);
+
+open (OUT, ">>$output") or die;
+open (DEP, ">>$depth_file") or die;
+print DEP join("\t", ("depth", "number")), "\n";
+
+my %deps;
+
+my $max_dep = 0;
+
+my (%num_forw, %num_rev); #record cytosine number in reference %num{$chr}->{CG}
+my (%cover_1W, %cover_2W, %cover_1C, %cover_2C, %cover_depth_forw, %cover_depth_rev);
+my (%cytos_forw, %cytos_rev); #record read cytosine depth in each cytosine refrence
+
+#chr1    79      79      CHH:27  0.148148        -
+# 0		  1		 2			3		4			 5
+open(FORW, $in_forw) or die;
+open(REV, $in_rev) or die;
+
+while(<FORW>){
+	chomp;
+	my @a = split "\t";
+	my $chr = $a[0];
+	my $per = $a[4];
+	my ($type, $depth) = split ":", $a[3];
+	my $C_num = round ($depth * $per);
+	
+	if($chr =~ /chr\d/){
+		$deps{$depth} ++;
+		if($depth > $max_dep){
+			$max_dep = $depth;
+		}
+	}
+	
+#	if ($debug){
+#		print STDERR join("\t", ($type, $C_num, $depth)), "\n";
+#	}
+	
+	$num_forw{$chr}->{$type}++;
+	$cytos_forw{$chr}->{$type} += $C_num;
+	
+	$cover_depth_forw{$chr}->{$type} += $depth;
+	
+	if($depth >= 1){
+		$cover_1W{$chr}->{$type}++;
+	}
+	if($depth >= 2){
+		$cover_2W{$chr}->{$type}++;
+	}
+	
+	
+}
+close(FORW);
+
+while(<REV>){
+	chomp;
+	my @a = split "\t";
+	my $chr = $a[0];
+	my $per = $a[4];
+	my ($type, $depth) = split ":", $a[3];
+	my $C_num = round ($depth * $per);
+
+	if($chr =~ /chr\d/){
+		$deps{$depth} ++;
+		if($depth > $max_dep){
+			$max_dep = $depth;
+		}
+	}
+
+	$num_rev{$chr}->{$type}++;
+	$cytos_rev{$chr}->{$type} += $C_num;
+	
+	$cover_depth_rev{$chr}->{$type} += $depth;
+	
+	if($depth >= 1){
+		$cover_1C{$chr}->{$type}++;
+	}
+	if($depth >= 2){
+		$cover_2C{$chr}->{$type}++;
+	}
+	
+}
+close(REV);
+
+for my $d (0..$max_dep){
+	my $num = 0;
+	if(defined $deps{$d}){
+		$num = $deps{$d};
+	}
+	print DEP join("\t", ($d, $num)), "\n";
+}
+
+
+my @types = ("CG", "CHG", "CHH");
+
+print OUT "Coverage >= 1:\n";
+#print OUT "On Watson strand:\n";
+
+print OUT join("\t", ("chr", "CG+", "CG-", "CHG+", "CHG-", "CHH+", "CHH-",  "forward", "reverse","total")), "\n";
+#my @chrs = ("chr1", "chr2", "chr3", "chr4", "chr5", "chrC", "chrM", "pUC19");
+foreach my $chr(sort keys %num_rev){
+	print OUT $chr;
+#	numerator / denominator
+
+	#as numerator
+	my $total = 0;
+	my $total_f = 0;
+	my $total_r = 0;
+	
+	# server as denominator
+	my $total_num = 0;
+	my $total_num_f = 0;
+	my $total_num_r = 0;
+	
+	
+	foreach my $type(@types){
+		my ($f, $r) = (0, 0);
+		
+		if(defined $cover_1W{$chr}->{$type}){$f = $cover_1W{$chr}->{$type}}
+		if(defined $cover_1C{$chr}->{$type}){$r = $cover_1C{$chr}->{$type}}
+		
+		$total += ($f + $r);
+		$total_f += $f;
+		$total_r += $r;
+		
+		$total_num   += ($num_forw{$chr}->{$type} + $num_rev{$chr}->{$type} );
+		$total_num_f += $num_forw{$chr}->{$type} ;
+		$total_num_r += $num_rev{$chr}->{$type};
+		
+		
+		print OUT "\t", $f, "/", $num_forw{$chr}->{$type}, "=", sprintf("%.3f",  $f / $num_forw{$chr}->{$type} * 100), "%";
+		print OUT "\t", $r, "/", $num_rev{$chr}->{$type}, "=",  sprintf("%.3f", $r / $num_rev{$chr}->{$type} * 100), "%";
+		
+	}
+	print OUT "\t";
+	
+	print OUT $total_f, "/", $total_num_f, "=", sprintf("%.3f", $total_f  / $total_num_f * 100), "%\t";
+	print OUT $total_r, "/", $total_num_r, "=", sprintf("%.3f", $total_r  / $total_num_r * 100), "%\t";
+	print OUT $total, "/", $total_num, "=", sprintf("%.3f", $total / $total_num * 100), "%\n";
+	
+	#print OUT join("\t", ($chr,  , $cover_1W{$chr}/$chr_len{$chr} * 100, "%\n";
+}
+
+print OUT "\n";
+
+print OUT "Coverage >= 2:\n";
+print OUT join("\t", ("chr", "CG+", "CG-", "CHG+", "CHG-", "CHH+", "CHH-",  "forward", "reverse","total")), "\n";
+
+foreach my $chr(sort keys %num_rev){
+	print OUT $chr;
+	# server as denominator
+	my $total_num = 0;
+	my $total_num_f = 0;
+	my $total_num_r = 0;
+	
+	#as numerator
+	my $total = 0;
+	my $total_f = 0;
+	my $total_r = 0;	
+	foreach my $type(@types){
+		my ($f, $r) = (0, 0);
+		
+		if(defined $cover_2W{$chr}->{$type}){$f = $cover_2W{$chr}->{$type}}
+		if(defined $cover_2C{$chr}->{$type}){$r = $cover_2C{$chr}->{$type}}
+		
+		$total += ($f + $r);
+		$total_f += $f;
+		$total_r += $r;
+		
+		$total_num   += ($num_forw{$chr}->{$type} + $num_rev{$chr}->{$type} );
+		$total_num_f += $num_forw{$chr}->{$type} ;
+		$total_num_r += $num_rev{$chr}->{$type};
+		
+		
+		print OUT "\t", $f, "/", $num_forw{$chr}->{$type}, "=", sprintf("%.3f",  $f / $num_forw{$chr}->{$type} * 100), "%";
+		print OUT "\t", $r, "/", $num_rev{$chr}->{$type}, "=",  sprintf("%.3f", $r / $num_rev{$chr}->{$type} * 100), "%";
+		
+	}
+	print OUT "\t";
+	
+	print OUT $total_f, "/", $total_num_f, "=", sprintf("%.3f", $total_f  / $total_num_f * 100), "%\t";
+	print OUT $total_r, "/", $total_num_r, "=", sprintf("%.3f", $total_r  / $total_num_r * 100), "%\t";
+	print OUT $total, "/", $total_num, "=", sprintf("%.3f", $total / $total_num * 100), "%\n";
+	
+
+	
+	#print OUT join("\t", ($chr,  , $cover_1W{$chr}/$chr_len{$chr} * 100, "%\n";
+}
+
+print OUT "\n";
+
+print OUT "Depth_coverage:\n";
+print OUT join("\t", ("chr", "CG+", "CG-", "CHG+", "CHG-", "CHH+", "CHH-", "forward", "reverse", "total")), "\n";
+
+foreach my $chr(sort keys %num_rev){
+	print OUT $chr;
+	# server as denominator
+	my $total_num = 0;
+	my $total_num_f = 0;
+	my $total_num_r = 0;
+	
+	#as numerator
+	my $total = 0;
+	my $total_f = 0;
+	my $total_r = 0;		
+	foreach my $type(@types){
+		my ($f, $r) = (0, 0);
+		
+		if(defined $cover_depth_forw{$chr}->{$type}){$f = $cover_depth_forw{$chr}->{$type}}
+		if(defined $cover_depth_rev{$chr}->{$type}){$r = $cover_depth_rev{$chr}->{$type}}
+		
+		$total += ($f + $r);
+		$total_f += $f;
+		$total_r += $r;
+		
+		$total_num   += ($num_forw{$chr}->{$type} + $num_rev{$chr}->{$type} );
+		$total_num_f += $num_forw{$chr}->{$type} ;
+		$total_num_r += $num_rev{$chr}->{$type};
+		
+		
+		print OUT "\t", $f, "/", $num_forw{$chr}->{$type}, "=", sprintf("%.3f", $f / $num_forw{$chr}->{$type} );
+		print OUT "\t", $r, "/", $num_rev{$chr}->{$type}, "=",  sprintf("%.3f", $r / $num_rev{$chr}->{$type} );
+		
+	}
+	print OUT "\t";
+	
+	print OUT $total_f, "/", $total_num_f, "=", sprintf("%.3f", $total_f / $total_num_f ), "\t";
+	print OUT $total_r, "/", $total_num_r, "=", sprintf("%.3f", $total_r / $total_num_r), "\t";
+	print OUT $total,   "/", $total_num,   "=", sprintf("%.3f", $total   / $total_num ), "\n";
+	
+	
+	#print OUT join("\t", ($chr,  , $cover_1W{$chr}/$chr_len{$chr} * 100, "%\n";
+}
+
+print OUT "\n";
+
+print OUT "Methylation_level:\n";
+print OUT join("\t", ("chr", "CG+", "CG-", "CHG+", "CHG-", "CHH+", "CHH-", "forward", "reverse", "total")), "\n";
+foreach my $chr(sort keys %num_rev){
+	print OUT $chr;
+	# server as denominator
+	my $total_num = 0;
+	my $total_num_f = 0;
+	my $total_num_r = 0;
+	
+	#as numerator
+	my $total = 0;
+	my $total_f = 0;
+	my $total_r = 0;	
+	
+	foreach my $type(@types){
+		my ($f, $r) = (0, 0);
+		
+		if(defined $cytos_forw{$chr}->{$type}){$f = $cytos_forw{$chr}->{$type}}
+		if(defined $cytos_rev{$chr}->{$type}){$r = $cytos_rev{$chr}->{$type}}
+		
+		$total += ($f + $r);
+		$total_f += $f;
+		$total_r += $r;
+		
+		$total_num   += ($cover_depth_forw{$chr}->{$type} + $cover_depth_rev{$chr}->{$type} );
+		$total_num_f += $cover_depth_forw{$chr}->{$type} ;
+		$total_num_r += $cover_depth_rev{$chr}->{$type};
+		
+		
+	#	print OUT "\t", $f, "/", $cover_depth_forw{$chr}->{$type}, "=", sprintf("%.3f",  $f / $cover_depth_forw{$chr}->{$type} * 100), "%";
+	#	print OUT "\t", $r, "/", $cover_depth_rev{$chr}->{$type}, "=",  sprintf("%.3f", $r / $cover_depth_rev{$chr}->{$type} * 100), "%";
+		my $per_forw = 0;
+		my $per_rev	 = 0;
+		if( $cover_depth_forw{$chr}->{$type} != 0 ){
+			$per_forw = sprintf("%.3f",  $f / $cover_depth_forw{$chr}->{$type} * 100 );
+		}
+		
+		if( $cover_depth_rev{$chr}->{$type} != 0 ){
+			$per_rev = sprintf("%.3f", $r / $cover_depth_rev{$chr}->{$type} * 100);
+		}
+	
+		print OUT "\t", $f, "/", $cover_depth_forw{$chr}->{$type}, "=", $per_forw , "%";
+		print OUT "\t", $r, "/", $cover_depth_rev{$chr}->{$type}, "=",  $per_rev  , "%";
+		
+		
+	}
+	print OUT "\t";
+	
+	#print OUT $total_f, "/", $total_num_f, "=", sprintf("%.3f", $total_f  / $total_num_f * 100), "%\t";
+	#print OUT $total_r, "/", $total_num_r, "=", sprintf("%.3f", $total_r  / $total_num_r * 100), "%\t";
+	#print OUT $total,   "/", $total_num,   "=", sprintf("%.3f", $total / $total_num * 100)     , "%\n";
+	
+	my ( $per_f,  $per_r,  $per_total ) = (0, 0, 0);
+	if( $total_num_f != 0) {$per_f     =  sprintf("%.3f", $total_f  / $total_num_f * 100);}
+	if( $total_num_r != 0) {$per_r     =  sprintf("%.3f", $total_r  / $total_num_r * 100);}
+	if( $total_num != 0) {$per_total =  sprintf("%.3f", $total / $total_num  * 100);}
+	
+	print OUT $total_f, "/", $total_num_f, "=", $per_f, "%\t";
+	print OUT $total_r, "/", $total_num_r, "=", $per_r, "%\t";
+	print OUT $total,   "/", $total_num,   "=", $per_total    , "%\n";
+
+	#print OUT join("\t", ($chr,  , $cover_1W{$chr}/$chr_len{$chr} * 100, "%\n";
+}
+
+
+
+close(OUT);
+
+exit;
+
+sub round {
+    my ($number) = shift;
+    #return int($number + .5);
+    return int($number + 0.5 * ($number <=> 0)); # take care of negative numbers too
+}

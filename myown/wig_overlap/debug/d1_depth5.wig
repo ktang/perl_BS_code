@@ -1,0 +1,13 @@
+track	type=wiggle_0	name="d1"	description="d1 methlation"	viewLimits=-1.0:1.0	color=255,102,0
+variableStep	chrom=chr1
+108	1
+115	1
+123	1
+161	0.923077
+310	0.277778
+444	0.266667
+448	0.214286
+500	0.761905
+511	0.842105
+530	0.130435
+562	0.173913

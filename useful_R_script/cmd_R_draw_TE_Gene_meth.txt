@@ -1,0 +1,2 @@
+R --slave --vanilla --args Gene_all Wenfeng_Gene_all Gene Gene/ < /Users/tang58/Kai_BS/useful_R_script/10_gene_TE_bin_files_R_cmd_for_all_command_v0.1.r
+R --slave --vanilla --args TE_all Wenfeng_TE_all TE TE/ < /Users/tang58/Kai_BS/useful_R_script/10_gene_TE_bin_files_R_cmd_for_all_command_v0.1.r
