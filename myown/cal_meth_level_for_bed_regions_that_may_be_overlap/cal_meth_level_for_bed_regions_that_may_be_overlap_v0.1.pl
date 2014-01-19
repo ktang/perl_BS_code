@@ -13,12 +13,12 @@
 # chr start end strand
 
 BEGIN { push @INC, '/Users/tang58/scripts_all/perl_code/Modules' }
-#use Kai_Module;
+use Kai_Module;
 
 use strict;
 use File::Spec;
 
-my $debug = 1;
+my $debug = 0;
 if($debug){
 	print STDERR "debug = 1\n\n";
 }
@@ -36,27 +36,29 @@ my $E_or_nE = "nE";
 #my  $usage = "$0 \n<dep_cutoff> <sample_label> <isMeth_file> <feature_bin_num> <flaking_bp> <flaking_bin_num> <input_bed_list> <outdir> <feature_pre>\n\n";
 #die $usage unless(@ARGV == 9);
 
-my  $usage = "$0 \n<dep_cutoff> <sample_label> <isMeth_file>  <input_bed_list> <outdir> <feature_pre | like 1kb>\n\n";
-die $usage unless(@ARGV == 6);
+my  $usage = "$0 \n<dep_cutoff> <isMeth_file>  <sample_label>  <input_bed_list>  <chr_col> <outpre> <outdir>\n\n";
+die $usage unless(@ARGV == 7);
 
 my $dep_cutoff = shift or die;
-my $sample_label = shift or die;
 my $isMeth_file = shift or die "isMeth_file";
+my $sample_label = shift or die;
 
 
 my $input_list_file = shift or die "input_list_file";
-my $outdir   = shift or die "outdir";
-my $feature_pre   = shift or die "outpre";
-
 my $chr_col = shift or die;
+
+my $outpre = shift or die;
+
+my $outdir   = shift or die "outdir";
+#my $feature_pre   = shift or die "outpre";
+
  
 die unless (-e $input_list_file);
 die unless (-d $outdir);
 
 die unless (-e $isMeth_file and -e $input_list_file);
 
-my $output = File::Spec->catfile($outdir,
-			 $feature_pre . "_in_" . $sample_label .  "_dep" . $dep_cutoff ."_meth_level.txt");
+my $output = File::Spec->catfile($outdir, $outpre . "_in_" . $sample_label .  "_dep" . $dep_cutoff ."_meth_level.txt");
 
 print STDERR "output:\n$output\n\n";
 die if (-e $output);
@@ -163,11 +165,11 @@ for my $i(1..$#input_list){
 
 	my @C_num_print = (0) x 4;
 	my @covered_C_num_print = (0) x 4;
-	my @covered_per_print  = "NA" x 4;
+	my @covered_per_print  = ( "NA" ) x 4;
 	
-	my @wmC_print = "NA" x 8;	
-	my @mmC_print = "NA" x 8;
-	my @fmC_print = "NA" x 8;
+	my @wmC_print = ( "NA" ) x 8;	
+	my @mmC_print = ( "NA" ) x 8;
+	my @fmC_print = ( "NA" ) x 8;
 	
 	Kai_Module::fill_C_num(\@C_num_print, \%C_num_h, $i);
 	Kai_Module::fill_C_num(\@covered_C_num_print, \%covered_C_num_h, $i);
@@ -177,6 +179,8 @@ for my $i(1..$#input_list){
 	Kai_Module::cal_meth_level ( \@wmC_print, \%seqed_mC_h, \%seqed_dep_h, $i);
 	Kai_Module::cal_meth_level ( \@mmC_print, \%seqed_per_h, \%covered_C_num_h, $i);
 	Kai_Module::cal_meth_level ( \@fmC_print, \%seqed_isMeth_h, \%covered_C_num_h, $i);
+	
+	print OUT join("\t", ( $this_bed,  @C_num_print, @covered_C_num_print, @covered_per_print, @wmC_print, @mmC_print, @fmC_print )), "\n";
 	
 }
 =head
