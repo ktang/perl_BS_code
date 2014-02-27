@@ -33,7 +33,7 @@ my $postfix = shift or die "postfix";
 #my $output = shift or die;
 
 opendir(DIR, $indir) or die;
-my @files = grep /_isMeth_\S*\.txt$/, readdir DIR;
+my @files = grep /_isMeth\S*\.txt$/, readdir DIR;
 closedir DIR;
 
 print STDERR join("\n", @files), "\n\n";
@@ -45,7 +45,7 @@ print STDERR join("\n", @files), "\n\n";
 my ( $feature_bin_num , $flaking_bp, $flaking_bin_num ) = (20, 2000, 20);
 
 foreach my $file (@files){
-	if($file =~ /(\S+)_isMeth_\S*\.txt$/){
+	if($file =~ /(\S+)_isMeth\S*\.txt$/){
 		my $pre = $1;
 		my $input = File::Spec->catfile($indir, $file);
 		die unless (-e $input);

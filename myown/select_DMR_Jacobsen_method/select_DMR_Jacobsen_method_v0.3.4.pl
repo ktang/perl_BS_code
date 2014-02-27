@@ -33,6 +33,9 @@ my $debug = 0;
 
 my $run_debug = 0;
 
+print STDERR "  as the input is depth filtered, so the depth_cutoff is deleted.\n This script is for filtered isMeth file and  depth_cutoff = 4/5 is just used in file name not real filter\n\n";
+
+
 if($debug){
 	print STDERR "debug = 1\n\n";
 }
@@ -44,7 +47,7 @@ my $allowed_gap  = 100;
 my $covered_num = int ($bin_size / $sliding_size);
 
 my $DMC_cutoff  = 10;
-my $depth_cutoff = 4;
+my $depth_cutoff = 5;# 4;
 my $p_value_cutoff = 0.05;
 my %chr_len = ("chr1"=>30427671, "chr2"=>19698289, "chr3"=>23459830, "chr4"=>18585056, "chr5"=>26975502);
 my $R_script = "/Users/tang58/Kai_BS/myown/select_DMR_Jacobsen_method/p_adjust_BH_v0.3.R";

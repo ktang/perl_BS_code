@@ -31,7 +31,7 @@ die unless (-e $wt_file);
 my $wt_label = shift or die;
 
 opendir(DIR, $indir);
-my @files = grep /isMeth.+\.txt$/, readdir DIR;
+my @files = grep /isMeth.*\.txt$/, readdir DIR;
 closedir (DIR);
 
 

@@ -42,7 +42,8 @@ my @outputs;
 for my $i(0..$last_index){
 	$files[$i]  = shift or die;
 	$labels[$i] = shift or die;
-	$outputs[$i] = File::Spec->catfile($outdir,  $labels[$i] . "_isMeth_depth" . $dep_cutoff . "_" . $postfix . ".txt" );
+	#$outputs[$i] = File::Spec->catfile($outdir,  $labels[$i] . "_isMeth_depth" . $dep_cutoff . "_" . $postfix . ".txt" );
+	$outputs[$i] = File::Spec->catfile($outdir,  $labels[$i] . "_depth" . $dep_cutoff . "_" . $postfix . "_isMeth.txt" );
 	die $files[$i] unless (-e $files[$i]);
 	die if (-e $outputs[$i]);
 }
