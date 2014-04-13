@@ -9,6 +9,9 @@
 # first line is not label but just number
 
 #system("date");
+BEGIN { push @INC, '/Users/tang58/scripts_all/perl_code/Modules' }
+use Kai_Module;
+#Kai_Module::simple_chr
 use strict;
 use File::Spec;
 
@@ -133,6 +136,7 @@ sub overlap{
 		chomp;
 		my @a = split /\t/ ;
 		my $chr = lc $a[0];
+		$chr = Kai_Module::simple_chr($chr);
 		my $start = $a[1];
 		my $end = $a[2];
 	#	my $new_start = $start - $allowed_gap;
@@ -154,6 +158,7 @@ sub overlap{
 		chomp;
 		my @a = split /\t/ ;
 		my $chr = lc $a[0];
+		$chr = Kai_Module::simple_chr($chr);
 		my $start = $a[1];
 		my $end = $a[2];
 		my $flag = 0;
@@ -170,3 +175,5 @@ sub overlap{
 	my $per = sprintf ("%.1f",100 * $num_overlap / $num_f1);
 	return "$num_overlap/$num_f1 = $per" . "%";
 }
+
+

@@ -20,10 +20,7 @@ use File::Spec;
 #$| = 1;
 
 my $debug = 0;
-
-
 my $debug_print = 1;
-
 my $debug_sub = 1;
 if($debug){
 	print STDERR "\n debug = 1 \n\n";
@@ -50,7 +47,8 @@ die $usage unless (@ARGV == 10);
 
 my $window_size 	  = shift or die "window_size";
 my $sliding_bp		  = shift or die "sliding_bp";
-my $merged_gap_cutoff = shift or die "merged_gap_cutoff";
+my $merged_gap_cutoff = shift ;
+ die "merged_gap_cutoff" if ($merged_gap_cutoff < 0);
 #my $netDMC_cutoff     = shift or die "netDMC_cutoff";
 my $big_score_cutoff     = shift or die "big_score_cutoff";
 my $fold_change_cutoff = shift or die "percentage_cutoff";

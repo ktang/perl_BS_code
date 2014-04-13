@@ -35,6 +35,8 @@ my $E_or_nE = "nE";
 
 #my  $usage = "$0 \n<dep_cutoff> <sample_label> <isMeth_file> <feature_bin_num> <flaking_bp> <flaking_bin_num> <input_bed_list> <outdir> <feature_pre>\n\n";
 #die $usage unless(@ARGV == 9);
+#time /Users/tang58/Kai_BS/myown/cal_meth_level_for_bed_regions_that_may_be_overlap/cal_meth_level_for_bed_regions_that_may_be_overlap_v0.1.pl 
+#4 ../colA_isMeth_chrC_error_separately_called.txt  colA Gene_all_coordinate_SAF_head.txt 2 TAIR10_all_Gene .
 
 my  $usage = "$0 \n<dep_cutoff> <isMeth_file>  <sample_label>  <input_bed_list>  <chr_col> <outpre> <outdir>\n\n";
 die $usage unless(@ARGV == 7);
@@ -45,7 +47,7 @@ my $sample_label = shift or die;
 
 
 my $input_list_file = shift or die "input_list_file";
-my $chr_col = shift or die;
+my $chr_col = shift or die; # "chr_col records which column  is the chr "
 
 my $outpre = shift or die;
 
